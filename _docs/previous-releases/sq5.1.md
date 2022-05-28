@@ -6,7 +6,7 @@ parent: Previous Releases
 grand_parent: Home
 ---
 
-# Version 5.1
+# New Features
 
 * Added the ability to set a license limit on a per Tenant basis. For example, if a Tenant has a license limit of 2, then only 2 users from that Tenant will be able to log in concurrently.
 
