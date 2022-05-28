@@ -18,25 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Horizon Reports
+title: Horizon Reports Studio
 email: support@horizon-reports.com
-app_name: Horizon Reports
-has_datagroups: true
-has_multilanguage: true
-has_multidatasource: true
-has_tenants: true
-manage_conn_string: true
-query_values: true
-users_can_register: true
-allow_password_reset: true
-manage_dsn: false
-support_center: true
-support_kb: false
-demo_days: 30
+app_name: Horizon Reports Studio
 company: TNM Software
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation for Horizon Reports ad hoc reporting software.
-url: "https://docs.horizon-reports.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://developerdocs.horizon-reports.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  tmansuy
 
 # Build settings
