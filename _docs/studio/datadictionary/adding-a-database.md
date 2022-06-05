@@ -3,6 +3,7 @@ layout: default
 title: Adding a Database
 nav_order: 1
 parent: Data Dictionary
+grand_parent: Horizon Reports Studio
 ---
 
 Filling in the data dictionary for a database would be a very tedious process if you had to do it by hand. Fortunately, Horizon Reports Studio has a feature to "discover" the metadata for a database. You do this by adding a database to the current project's data dictionary.

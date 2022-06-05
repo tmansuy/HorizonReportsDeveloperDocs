@@ -3,6 +3,7 @@ layout: default
 title: Database Properties
 nav_order: 2
 parent: Data Dictionary
+grand_parent: Horizon Reports Studio
 ---
 
 When you select a database in the treeview, an editor displays the properties for that database.
