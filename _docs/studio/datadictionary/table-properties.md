@@ -14,7 +14,7 @@ There are three types of tables:
 
 * Subtables - these are used to resolve self-joins or multiple relationships between tables.
 
-When you select a table in Studio, the properties pane displays the properties for that table. The properties displayed are:
+When you select a table in Studio, an editor displays the properties for that table:
 
 ![](images\tableprops.png)
 
