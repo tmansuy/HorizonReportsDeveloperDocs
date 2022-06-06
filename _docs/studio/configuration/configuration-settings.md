@@ -8,7 +8,7 @@ grand_parent: Horizon Reports Studio
 
 Configuration settings are maintained with the Configuration Settings tab in Studio. To change the value for a setting, select the appropriate category in the Configuration settings tab, and enter the new value for the setting. When finished changing settings, click save.
 
-##Application Settings
+## Application Settings
 
 * *Support Multi-Languages*: Horizon Reports can support [multiple languages](vfps://Topic/_12U0SEQQV). However, you may decide to only support a single language. In that case, you don't want the Language option to appear in the Options dialog. Set this to False in this case. You can set the default language using the Default Language setting.
 
@@ -32,7 +32,7 @@ Note that the email credentials used to send the email come from the "Demo Email
 
 * *Automatically Query Values When Editing Filter*: If this setting is True, the report writer retrieves the unique values for the field in a filter condition as the user enters a value for the condition. Turn this off if this causes performance issues.
 
-##Branding Settings
+## Branding Settings
 
 * *Application Name*: This property is the name shown in various places, such as the home page of the web application and in the About dialog. You can assign a name such as "Report Writer for MyApplication," "MyApplication Query," or "Bob's Report Writer."
 
@@ -62,7 +62,7 @@ Note that the email credentials used to send the email come from the "Demo Email
 
 * *Icon File*: If you want to use your own icon rather than the Horizon Reports icon (![](images/favicon.png)), specify the name of an ICO file for the Icon File property. For the web version, this is used as the icon in the browser.
 
-##Data Settings
+## Data Settings
 
 * *Allow Multiple Data Sources*: If you want to allow your users to query on different sets of data, set this setting to True. When this setting is True, the Login page displays a drop-down list of data sources defined to Horizon Reports, allowing the user to choose which data source to query on. You can use the [GetDataSources](vfps://Topic/_0OV0TGF6C) method of a data engine plugin to add the data sources that should be available to the end user.
 
@@ -109,6 +109,6 @@ In certain types of applications, such as an accounting system, you may want the
 
 * *Skip Schema Retrieval when Running a Report*: If you set this option to true, the report writer will skip retrieving the schema for a query prior to actually executing the query. This can slightly improve performance, but database queries issued this way cannot be cancelled.
 
-##Web Settings
+## Web Settings
 
-##Auth Settings
+## Auth Settings
