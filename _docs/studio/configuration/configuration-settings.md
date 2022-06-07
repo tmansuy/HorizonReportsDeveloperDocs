@@ -111,4 +111,52 @@ In certain types of applications, such as an accounting system, you may want the
 
 ## Web Settings
 
+* *Users Can Register on Login Page*: If this is set to True, unauthorized users can click a link on the login page to be given access to the application. This is typically only turned on in demo web sites. Note that the link only appears if the various Demo Email settings are filled in.
+
+* *Server Email Sender Address*: This is the email address to send server messages (Password Resets, New User Registration, etc...) from.
+
+* *Server Email Sender Name*: This is the descriptive name of the sender server messages are from.
+
+* *Server Email SMTP Server*: This is the address of the SMTP server to send the messages from.
+
+* *Server Email SMTP Port*: This is the port to use for the SMTP server when sending messages.
+
+* *Server Email SMTP User Name*: This is the user name of the mail account to send server messages from.
+
+* *Server Email SMTP Password*: This is the password of the mail account to send server messages from.
+
+* *Support Multi-Tenant Environment*: Set this setting to True to enable [multi-tenant support](vfps://Topic/_43A0WMOCI).
+
+* *Filter Field for Queries in Multi Tenant Environment*: If all tenants share a database, but each table has a certain field containing an ID indicating which tenant the record belongs to, then use this setting to specify the field.
+
+* *Data Type of Tenant Filter Field*: This specifies the data type of the field specified in the *Filter field for queries in multi-tenant* setting.
+
 ## Auth Settings
+
+* *Log Off Redirect URL*: The report writer will normally redirect the user to the login page (external or internal) when a user logs off. However if you'd like to override this behavior and redirect to a different URL on log off, specify the URL you'd like to redirect to in this setting.
+
+* *Allow Password Resets*: Set this to true to allow a user to request a password reset email in case they forget their password.
+
+* *ADFS Metadata Address*: The metadata address to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via ADFS.
+
+* *ADFS Realm*: The realm (or WtRealm) address to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via ADFS.
+
+* *OpenID Authority*: The Authority to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via OpenID Connect.
+
+* *OpenID Client ID*: The Client ID to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via OpenID Connect.
+
+* *OpenID Client Secret*: The Client secret to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via OpenID Connect.
+
+* *Facebook App ID*: Set this value to your Facebook app ID if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Facebook.
+
+* *Facebook App Secret*: Set this value to your Facebook app secret if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Facebook.
+
+* *Google Client ID*: Set this value to your Google client ID if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Google.
+
+* *Google Client Secret*: Set this value to your Google client secret if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Google.
+
+* *Twitter Consumer Key*: Set this value to your Twitter consumer key if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Twitter.
+
+* *Twitter Consumer Secret*: Set this value to your Twitter consumer secret if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Twitter.
+
+* *Timeout*: This specifies the timeout period in minutes for the current logged in user. If there is no activity for this period of time, the user is automatically logged out. The default is 20.
