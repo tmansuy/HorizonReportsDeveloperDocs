@@ -8,7 +8,7 @@ parent: Deploying Horizon Reports
 # Publishing a Project
 To deploy Horizon Reports on a web server, you need to deploy two things:
 
-- Horizon Reports web application: On the web server, download the [web application installer](https://www.horizon-reports.com/downloads/hrwebsetup.exe) and install. The application requires the [ASP.NET Core 6.0 Hosting Bundle](https://download.visualstudio.microsoft.com/download/pr/ae1014c7-a005-4a0e-9062-b6f3056ded09/da5d731f5ead9e385427a77412b88fb0/dotnet-hosting-6.0.5-win.exe), but the installer should automatically download and install this.
+- Horizon Reports web application: On the web server, download the [web application installer](https://www.horizon-reports.com/downloads/current/hrwebsetup.exe) and install. The application requires the [ASP.NET Core 6.0 Hosting Bundle](https://download.visualstudio.microsoft.com/download/pr/ae1014c7-a005-4a0e-9062-b6f3056ded09/da5d731f5ead9e385427a77412b88fb0/dotnet-hosting-6.0.5-win.exe), but the installer should automatically download and install this.
 
 > @icon-info-circle If you're deploying to Azure or similar and are unable to run the installer, instead install to a local folder and then upload the contents of that folder to the server.
 
@@ -28,7 +28,7 @@ The simplest way to publish to a Microsoft Azure server is to publish to a local
 
     ![](images/RDPSHARING.PNG)
 
-* Download the [web application installer](https://www.horizon-reports.com/downloads/hrwebsetup.exe) and install to a local folder.
+* Download the [web application installer](https://www.horizon-reports.com/downloads/current/hrwebsetup.exe) and install to a local folder.
 
 * Copy the *Project_Data* folder from your Horizon Reports installation to the same local folder.
 
