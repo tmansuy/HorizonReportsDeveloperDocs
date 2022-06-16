@@ -83,10 +83,10 @@ namespace HorizonReports.Plugins
 }
 ```
 
-(As with all plugins that derive from IBasePlugin, it also has an Application member; see the [Plugins](vfps://Topic/_0OV0T6LZO) topic for information about Application.)
+(As with all plugins that derive from IBasePlugin, it also has an Application member; see the [Plugins]({% link _docs/plugins/index.md %}) topic for information about Application.)
 
 ## ApplicationPlugin
-The ApplicationPlugin attribute on the plugin class has the usual set of parameters all plugin attributes do; see the [Plugins](vfps://Topic/_0OV0T6LZO) topic for details. Here's an example:
+The ApplicationPlugin attribute on the plugin class has the usual set of parameters all plugin attributes do; see the [Plugins]({% link _docs/plugins/index.md %}) topic for details. Here's an example:
 
 ```csharp
 [ApplicationPlugin("{9857FB9C-2BA2-46A5-8F8F-60D33B6ABE33}",

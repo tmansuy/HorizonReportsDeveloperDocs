@@ -20,7 +20,7 @@ When you select a table in Studio, an editor displays the properties for that ta
 
 * *Name*: the name of the table. If the name contains characters other than letters, numbers, and underscores, or if it matches a SQL keyword, such as DESC or ORDER, Studio automatically adds delimiters around the name (the delimiters defined in the [database properties](vfps://Topic/_0PR0V3L9G)). It also automatically adds delimiters if you turned on the *Add delimiters to all names* setting when adding or refreshing the database. You can also manually add delimiters if necessary.
 
-* *Caption*: the name as displayed to the user in the report writer. If the caption is an expression that should be evaluated, surround it with curly braces. For example, if the caption calls the GetCaption [plugin](vfps://Topic/_0OV0T6LZO), specify "{GetCaption()}" (without the quotes) for the caption. Note the expression is evaluated every time the table is accessed, so you get better performance by changing the caption in the [AfterLoaded](vfps://Topic/_0OY0XE8SD) method of a data dictionary plugin instead.
+* *Caption*: the name as displayed to the user in the report writer. If the caption is an expression that should be evaluated, surround it with curly braces. For example, if the caption calls the GetCaption [plugin]({% link _docs/plugins/index.md %}), specify "{GetCaption()}" (without the quotes) for the caption. Note the expression is evaluated every time the table is accessed, so you get better performance by changing the caption in the [AfterLoaded](vfps://Topic/_0OY0XE8SD) method of a data dictionary plugin instead.
 
 * *Data groups*: the data group or groups the table belongs to (see the [Creating a Data Group](vfps://Topic/_1O90ZE2TD) topic for information on data groups). To change the data group for the table, click the drop-down button to display a list of the defined data groups and turn on or off the checkmarks in front of the appropriate data group names. Click the drop-down button again to close the list.
 
@@ -50,5 +50,5 @@ When you select a table in Studio, an editor displays the properties for that ta
 
 * *Plugin data*: this property, which is only available for virtual tables, contains data needed by the plugin specified in *Plugin*. For example, for CombinedVirtualTablePlugin, *Plugin data* contains the names of the two tables, each on its own line. For StoredProcedurePlugin, it contains the name of the stored procedure. Your own virtual table plugin can use the value of *Plugin data* for its own purposes.
 
-* *Custom properties*: Horizon Reports doesn't use this property for anything. You can use it to hold any information you wish. The value is stored in the UserDefined property of the Table object, which a [plugin](vfps://Topic/_0OV0T6LZO) could use for any purpose necessary.
+* *Custom properties*: Horizon Reports doesn't use this property for anything. You can use it to hold any information you wish. The value is stored in the UserDefined property of the Table object, which a [plugin]({% link _docs/plugins/index.md %}) could use for any purpose necessary.
 

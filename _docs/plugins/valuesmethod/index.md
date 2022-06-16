@@ -38,10 +38,10 @@ namespace HorizonReports.Plugins
 }
 ```
 
-(As with all plugins that derive from IBasePlugin, it also has an Application member; see the [Plugins](vfps://Topic/_0OV0T6LZO) topic for information about Application.)
+(As with all plugins that derive from IBasePlugin, it also has an Application member; see the [Plugins]({% link _docs/plugins/index.md %}) topic for information about Application.)
 
 ### ValuesMethodPlugin
-The ValuesMethodPlugin attribute on the plugin class has the following parameters (see the [Plugins](vfps://Topic/_0OV0T6LZO) topic for details on all but the last parameter):
+The ValuesMethodPlugin attribute on the plugin class has the following parameters (see the [Plugins]({% link _docs/plugins/index.md %}) topic for details on all but the last parameter):
 
 * The ID for the plugin.
 

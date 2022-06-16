@@ -6,7 +6,7 @@ parent: Configuration
 grand_parent: Horizon Reports Studio
 ---
 
-Your [plugins](vfps://Topic/_0OV0T6LZO) may need additional settings that can be configured for the user. Custom settings also may be needed as parameters for reports. To define these settings, use the Custom Setting tab in the Configuration section of Studio.
+Your [plugins]({% link _docs/plugins/index.md %}) may need additional settings that can be configured for the user. Custom settings also may be needed as parameters for reports. To define these settings, use the Custom Setting tab in the Configuration section of Studio.
 
 To create a custom setting, click the Add button (![](images\addbutton.png)).
 

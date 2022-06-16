@@ -47,5 +47,5 @@ The properties displayed are:
 
 * *Test*: click this button to test the connection settings for the database.
 
-* *Custom properties*: Horizon Reports doesn't use this property for anything. You can use it to hold any information you wish. The value is stored in the UserDefined property of the Database object, which a [plugin](vfps://Topic/_0OV0T6LZO) could use for any purpose necessary.
+* *Custom properties*: Horizon Reports doesn't use this property for anything. You can use it to hold any information you wish. The value is stored in the UserDefined property of the Database object, which a [plugin]({% link _docs/plugins/index.md %}) could use for any purpose necessary.
 

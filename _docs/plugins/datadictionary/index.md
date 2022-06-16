@@ -61,10 +61,10 @@ namespace HorizonReports.Plugins
 }
 ```
 
-(As with all plugins that derive from IBasePlugin, it also has an Application member; see the [Plugins](vfps://Topic/_0OV0T6LZO) topic for information about Application.)
+(As with all plugins that derive from IBasePlugin, it also has an Application member; see the [Plugins]({% link _docs/plugins/index.md %}) topic for information about Application.)
 
 ## DataDictionaryPlugin
-The DataDictionaryPlugin attribute on the plugin class has the usual set of parameters all plugin attributes do; see the [Plugins](vfps://Topic/_0OV0T6LZO) topic for details. Here's an example:
+The DataDictionaryPlugin attribute on the plugin class has the usual set of parameters all plugin attributes do; see the [Plugins]({% link _docs/plugins/index.md %}) topic for details. Here's an example:
 
 ```csharp
 [DataDictionaryPlugin("{815AB23B-403D-418C-A85D-DE8B3B5595FB}",

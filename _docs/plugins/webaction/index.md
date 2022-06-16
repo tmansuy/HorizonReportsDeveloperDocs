@@ -47,10 +47,10 @@ namespace HorizonReports.Plugins
 }
 ```
 
-(As with all plugins that derive from IBasePlugin, it also has an Application member; see the [Plugins](vfps://Topic/_0OV0T6LZO) topic for information about Application.)
+(As with all plugins that derive from IBasePlugin, it also has an Application member; see the [Plugins]({% link _docs/plugins/index.md %}) topic for information about Application.)
 
 ### WebActionPlugin
-The WebActionPlugin attribute on the plugin class has the following parameters (see the [Plugins](vfps://Topic/_0OV0T6LZO) topic for details on these parameters):
+The WebActionPlugin attribute on the plugin class has the following parameters (see the [Plugins]({% link _docs/plugins/index.md %}) topic for details on these parameters):
 
 * The ID for the plugin.
 
