@@ -23,11 +23,11 @@ There are several different types of plugins in Stonefield Query:
 
 * [Data engine](vfps://Topic/_0SK0XH4QO): these plugins are called from various places during data engine processing. For example, the GetDataSources method of such a plugin can programmatically define the data sources (physical connection information) for a database.
 
-* [Functions](vfps://Topic/_0SK0XEC3O): these simple plugins provide methods called from various places in Horizon Reports, such as the Expression or Caption properties of a field.
+* [Functions]({% link _docs/plugins/functions.md %}): these simple plugins provide methods called from various places in Horizon Reports, such as the Expression or Caption properties of a field.
 
 * [Report engine](vfps://Topic/_3X70PTD6Y): these plugins are called from various places during report engine processing, such as determining whether the current user can access a specific report.
 
-* [Setup](vfps://Topic/_3QV0S1XDP): setup plugins allow you to define additional settings that appear in the Horizon Reports Setup Wizard.
+* [Setup]({% link _docs/plugins/setup/index.md %}): setup plugins allow you to define additional settings that appear in the Horizon Reports Setup Wizard.
 
 * [Value converter](vfps://Topic/_3QW0PG1T9): these plugins convert a value stored in a field into the value you want displayed to the user. For example, some applications store dates as numeric values, so January 13, 2013 is stored as 20130113. A value converter converts the numeric value to a date value for display in a report, and a date value used as a filter into a numeric value that can be used in the WHERE clause of a SQL statement.
 

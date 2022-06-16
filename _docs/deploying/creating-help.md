@@ -57,6 +57,6 @@ You may want to consider customizing the following:
 
 * Add any additional information desired to the Technical Support topic under.
 
-* If you create a [Setup plugin](vfps://Topic/_3QV0S1XDP), add a topic under the Configuration section describing any additional options you defined in the plugin.
+* If you create a [Setup plugin]({% link _docs/plugins/setup/index.md %}), add a topic under the Configuration section describing any additional options you defined in the plugin.
 
 Edit the markdown (.md) files for the appropriate help topics using your favorite text editor.

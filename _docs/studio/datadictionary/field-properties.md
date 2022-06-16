@@ -149,7 +149,7 @@ The Main page contains the main properties for a field. The following properties
        return span.ToString(@"hh\:mm");
     }</pre>
 
-    See the [Functions](vfps://Topic/_0SK0XEC3O) topic for information on creating formatters.
+    See the [Functions]({% link _docs/plugins/functions.md %}) topic for information on creating formatters.
 
 * *Default summary*: this setting specifies the default summary setting for the field in a report. For example, if this is set to Sum, when the field is added to a report, it will automatically sum the field.
 

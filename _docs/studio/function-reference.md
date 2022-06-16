@@ -80,7 +80,7 @@ For example, if SomeDate is 03/15/2004, Month(SomeDate) in (1, 2, 3) returns tru
 ## Functions
 Functions are specified as the function name (note that function names are case-insensitive) followed by left and right parentheses. Parameters (values for the function to work on) may be specified inside the parentheses, and may be literal values, fields from a database, or another expression (such as Year(Now())).
 
-There are many functions built into Horizon Reports. These functions are very similar to the equivalent functions in Microsoft Excel, in terms of the function names, the parameters they take, and the values they return. There are also functions that have the same names as those in earlier versions of Horizon Reports for backward compatibility. You can, of course, also create your own functions using a [functions plugin](vfps://Topic/_0SK0XEC3O).
+There are many functions built into Horizon Reports. These functions are very similar to the equivalent functions in Microsoft Excel, in terms of the function names, the parameters they take, and the values they return. There are also functions that have the same names as those in earlier versions of Horizon Reports for backward compatibility. You can, of course, also create your own functions using a [functions plugin]({% link _docs/plugins/functions.md %}).
 
 Here is a list of the functions built into the report writer.
 
