@@ -26,14 +26,14 @@ Give the application pool a name you can easily associate with your reporting ap
 
 ![](images/applicationpooladded.png)
 
-There are a number of advanced settings that can be modified for an application pool to change how it behaves. If you plan to use the Scheduler, one change to the default settings is [required](vfps://Topic/_6010lkkl6). To access advanced settings, select the application pool in the list and in the Actions pane, click *Advanced Settings...*.
+There are a number of advanced settings that can be modified for an application pool to change how it behaves. If you plan to use the Scheduler, one change to the default settings is [required]({% link _docs/deploying/configuring-iis/app-pool-settings.md %}). To access advanced settings, select the application pool in the list and in the Actions pane, click *Advanced Settings...*.
 
 ## Deploying project files
 Publish your project as discussed in the [Publishing Stonefield Query](vfps://Topic/_3X60MKZKD) help topic. You can choose to publish to an FTP location or to a folder on the machine. If you aren't publishing on the web server, transfer the contents of the "published to" folder to the web server. A common practice is to create a subdirectory in C:\inetpub for each web application.
 
 ![](images/projectfilesdeployed.png)
 
-The application pool [identity](vfps://Topic/_6010lkkl6) requires read and execute permissions to the top-level application folder (shown as HRWeb in this example) and full read and write permissions to the App_Data, Licenses, and Logs folders. If you're using the new preferred publishing method, the App_Data, Licenses, and Logs folders may not already exist. In that case, create them, then set the necessary permissions.
+The application pool [identity]({% link _docs/deploying/configuring-iis/app-pool-settings.md %}) requires read and execute permissions to the top-level application folder (shown as HRWeb in this example) and full read and write permissions to the App_Data, Licenses, and Logs folders. If you're using the new preferred publishing method, the App_Data, Licenses, and Logs folders may not already exist. In that case, create them, then set the necessary permissions.
 
 ![](images/securitydefault.png)
 

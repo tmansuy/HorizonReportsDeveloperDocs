@@ -10,7 +10,7 @@ grand_parent: Deploying Horizon Reports
 It's a good idea to make a complete backup of the contents of the web site folder before beginning the migration process, just in case you want to revert to the previous version.
 
 ## Web.config
-Custom "appsettings" in web.config are no longer supported. Previously defined settings in web.config need to be moved to [options.json](VFPS://Topic/_6010ngw39)
+Custom "appsettings" in web.config are no longer supported. Previously defined settings in web.config need to be moved to [options.json]({% link _docs/how-to/configuring.md %})
 
 ## Application pool
 The web application no longer supports using a shared application pool. If you previously hosted with a shared pool, create a new [dedicated application pool](VFPS://Topic/_44z0xpttm).
