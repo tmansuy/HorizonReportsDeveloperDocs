@@ -21,7 +21,7 @@ The **App_Data**, **Project_Data**, and **Licenses** folders contain all the fil
 
 ![](images/remainingfolders.png)
 
-After this, continue publishing to the new application folder as discussed in the [Publishing Horizon Reports](vfps://Topic/_3X60MKZKD) help topic.
+After this, continue publishing to the new application folder as discussed in the [Publishing Horizon Reports]({% link _docs/deploying/publishing.md %}) help topic.
 
 ## Plugins
 
