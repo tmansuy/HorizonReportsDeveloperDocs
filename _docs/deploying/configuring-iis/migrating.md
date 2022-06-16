@@ -25,4 +25,4 @@ After this, continue publishing to the new application folder as discussed in th
 
 ## Plugins
 
-If you have existing plugins, they must be recompiled for .NET 6. If you aren't sure how to do this, you can consider using the [Automatic Compilation](vfps://Topic/_6010ufjxa) feature.
+If you have existing plugins, they must be recompiled for .NET 6. If you aren't sure how to do this, you can consider using the [Automatic Compilation]({% link _docs/plugins/automatic-compilation.md %}) feature.

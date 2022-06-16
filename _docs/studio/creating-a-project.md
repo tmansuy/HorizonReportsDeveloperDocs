@@ -13,7 +13,7 @@ The first time you start Horizon Reports, you'll automatically be prompted to cr
 
 The new project dialog has the following options:
 
-* *Project name*: enter the name of the application as you want users to see it. Obviously, you can call it "Horizon Reports", but that's not a requirement; you can call it anything you wish, such as "My New Report Writer" or "Inventory Reporting System." The value you enter here corresponds with the [Application Name](vfps://Topic/_0OW0UC6M0) configuration setting.
+* *Project name*: enter the name of the application as you want users to see it. Obviously, you can call it "Horizon Reports", but that's not a requirement; you can call it anything you wish, such as "My New Report Writer" or "Inventory Reporting System." The value you enter here corresponds with the [Application Name]({% link _docs/studio/configuration/configuration-settings.md %}) configuration setting.
 
 * *Short name*: this defaults to the name you enter for *Project name* but is used as an abbreviated name in various places. For example, if you set *Project name* to "The Northwind Company Reporting System," you may want to use a shorter name like "Northwind Reporting" for *Short name*. This setting is stored in the [Short Application Name](vfps://Topic/_1RV0RJ3Z1) configuration setting.
 

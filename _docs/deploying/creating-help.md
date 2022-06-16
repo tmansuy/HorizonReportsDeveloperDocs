@@ -5,7 +5,7 @@ nav_order: 1
 parent: Deploying Horizon Reports
 ---
 
-The end user Report Writer has a HTML-based help (similar to this site) that describes all the functionality and provides a "how to" section. By default, the report writer will link to http://docs.horizon-reports.com for help. You can also create a customized help site. This allows you to make changes to the [Application Name](vfps://Topic/_0OW0UC6M0) or other [configuration settings](vfps://Topic/_0OW0UA8BF). 
+The end user Report Writer has a HTML-based help (similar to this site) that describes all the functionality and provides a "how to" section. By default, the report writer will link to http://docs.horizon-reports.com for help. You can also create a customized help site. This allows you to make changes to the [Application Name]({% link _docs/studio/configuration/configuration-settings.md %}) or other settings. 
 
 ## Creating customized help
 The default help documentation uses a source repository and [GitHub Pages](https://pages.github.com/). To create customized help for your Horizon Reports project, do the following:
