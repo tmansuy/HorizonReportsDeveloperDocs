@@ -9,6 +9,6 @@ When you run Horizon Reports, if your copy isn't activated, the software will ru
 
 To activate, log in to the report writer with an Administrator account, and choose *Setup* from the Tools menu. Under the licenses tab, add a new license and enter your serial number, then click *Activate Online* to generate an activation for the license.
 
-If online activation isn't working, send an email to [Technical Support](vfps://Topic/_0QN0YS5T5) to obtain an activation code; be sure to provide both the serial number and registration number. Once you get a response with an activation code, use it to add the license under the licenses tab. 
+If online activation isn't working, send an email to [Technical Support]({% link _docs/support.md %}) to obtain an activation code; be sure to provide both the serial number and registration number. Once you get a response with an activation code, use it to add the license under the licenses tab. 
 
-For more information on how licensing works, see the [Licensing](vfps://Topic/_0XJ111C8M) topic.
+For more information on how licensing works, see the [Licensing]({% link _docs/licensing.md %}) topic.

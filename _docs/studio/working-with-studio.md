@@ -19,6 +19,6 @@ The Project menu has functions for [creating a new project](vfps://Topic/_0QM0X4
 
 * *[Roles](vfps://Topic/_1O90ZEBQ4)*: Here you can define roles for use in role-based security.
 
-* *[Configuration](vfps://Topic/_0OW0UA8BF)*: Here you can modify customization settings for the reporting project.
+* *[Configuration]({% link _docs/studio/configuration/configuration-settings.md %})*: Here you can modify customization settings for the reporting project.
 
 
