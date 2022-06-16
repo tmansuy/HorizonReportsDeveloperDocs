@@ -24,4 +24,4 @@ The name for the copy.
 True if the report should be copied, false if not.
 
 ## Example
-See the example for [AfterReportSaved](vfps://Topic/_43E0SK68Z).
+See the example for [AfterReportSaved]({% link _docs/plugins/reportengine/afterreportsaved.md %}).

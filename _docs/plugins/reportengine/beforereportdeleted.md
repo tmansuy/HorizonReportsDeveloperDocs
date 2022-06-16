@@ -21,4 +21,4 @@ The report to be deleted.
 True if the report should be deleted, false if not.
 
 ## Example
-See the example for [AfterReportSaved](vfps://Topic/_43E0SK68Z).
+See the example for [AfterReportSaved]({% link _docs/plugins/reportengine/afterreportsaved.md %}).

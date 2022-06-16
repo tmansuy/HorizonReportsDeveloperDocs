@@ -29,4 +29,4 @@ The name of the file the report is being exported to.
 True if the report should be exported, False if not. If you want a message displayed to the user about why it terminated, throw an exception with the appropriate message.
 
 ## Example
-See the example for [AfterReportSaved](vfps://Topic/_43E0SK68Z).
+See the example for [AfterReportSaved]({% link _docs/plugins/reportengine/afterreportsaved.md %}).

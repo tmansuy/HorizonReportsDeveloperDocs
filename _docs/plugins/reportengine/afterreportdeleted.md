@@ -24,4 +24,4 @@ True if the report was deleted, false if not.
 None.
 
 ## Example
-See the example for [AfterReportSaved](vfps://Topic/_43E0SK68Z).
+See the example for [AfterReportSaved]({% link _docs/plugins/reportengine/afterreportsaved.md %}).
