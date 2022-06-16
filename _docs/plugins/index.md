@@ -17,7 +17,7 @@ Data dictionary properties and configuration settings can only take Horizon Repo
 
 There are several different types of plugins in Stonefield Query:
 
-* [Application](vfps://Topic/_0SK0XF365): these plugins are called from various places in the report writer. For example, after Horizon Reports has finished its startup task, the AfterSetup method of an application plugin is called.
+* [Application]({% link _docs/plugins/application/index.md %}): these plugins are called from various places in the report writer. For example, after Horizon Reports has finished its startup task, the AfterSetup method of an application plugin is called.
 
 * [Data dictionary](vfps://Topic/_3QV0S4C5Y): these plugins are called during specific data dictionary events, such as after the collections have been loaded from the data dictionary database.
 

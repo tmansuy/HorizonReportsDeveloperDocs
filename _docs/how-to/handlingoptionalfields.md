@@ -108,7 +108,7 @@ public static object GetOptionalField(string itemNumber,
 }
 ```
 
-The following code, which is the [AfterSetup](vfps://Topic/_0W60XD3HQ) method of an [application plugin](vfps://Topic/_0SK0XF365), dynamically adds optional fields to the ICITEM table in the data dictionary:
+The following code, which is the [AfterSetup]({% link _docs/plugins/application/aftersetup.md %}) method of an [application plugin]({% link _docs/plugins/application/index.md %}), dynamically adds optional fields to the ICITEM table in the data dictionary:
 
 ```csharp
 /// <summary>
