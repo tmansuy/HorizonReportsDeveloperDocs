@@ -15,11 +15,11 @@ You may wish to add parameters to a report layout that control how the report ru
 
 * Add a label to the layout and bind it to the parameter you created.
 
-* Create a [report engine plugin](vfps://Topic/_3X70PTD6Y).
+* Create a [report engine plugin]({% link _docs/plugins/reportengine/index.md %}).
 
 * Add a reference to DevExpress.XtraReports.v21.2.dll, DevExpress.Printing.v21.2.Core.dll, and DevExpress.Data.v21.2.dll.
 
-* Use code similar to the following in the [AfterCreateLayout](vfps://Topic/_40O0TIYCL) method to set the value of the parameter:
+* Use code similar to the following in the *AfterCreateLayout* method to set the value of the parameter:
 
 ```csharp
 DevExpress.XtraReports.UI.XtraReport xreport = (report.Layout as XtraReport);

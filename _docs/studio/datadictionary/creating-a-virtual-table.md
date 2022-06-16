@@ -6,7 +6,7 @@ parent: Data Dictionary
 grand_parent: Horizon Reports Studio
 ---
 
-A virtual table is one you define in the data dictionary and doesn't physically exist. When the user uses a virtual table in a report, [plugin code](vfps://Topic/_3QV0W6BRP) you create is used to retrieve the appropriate data.
+A virtual table is one you define in the data dictionary and doesn't physically exist. When the user uses a virtual table in a report, [plugin code]({% link _docs/plugins/virtualtable/select.md %}) you create is used to retrieve the appropriate data.
 
 Virtual tables are typically used to hide the complexity of an application's data structures. For example, if you have individual invoices and credit notes tables, you may wish to create a virtual table that combines records from both tables. That would make reporting much easier for the user.
 

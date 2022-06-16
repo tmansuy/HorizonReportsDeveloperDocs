@@ -11,7 +11,7 @@ Data dictionary properties and configuration settings can only take Horizon Repo
 
 * *Defining data sources*. If the [*Connection type*](vfps://Topic/_0PR0V3L9G) property of a database is set to *Scripted*, a plugin specifies the connection information for the database. You can define multiple data sources for a database if desired.
 
-* *Calling stored procedures*. For a variety of reasons (security, performance, or because the DBA says so), you may want to access the data in a table via a stored procedure rather than by a SQL statement. Since Horizon Reports doesn't know the name of the stored procedure to call or the parameters to pass to it, you have to put code in the [Select](vfps://Topic/_3QV0W6BRP) method of a plugin for the table.
+* *Calling stored procedures*. For a variety of reasons (security, performance, or because the DBA says so), you may want to access the data in a table via a stored procedure rather than by a SQL statement. Since Horizon Reports doesn't know the name of the stored procedure to call or the parameters to pass to it, you have to put code in the [Select]({% link _docs/plugins/virtualtable/select.md %}) method of a plugin for the table.
 
 * *Calculated fields*. You may have a [calculated field](vfps://Topic/_0U10UENKF) for which a simple expression won't suffice. For example, suppose the commission for a sale is set to a sliding scale, so higher sales amounts receive a higher commission percentage. In this case, you may have to use a control structure such as a switch statement to determine the amount. The code for this goes into a function plugin called from the [Expression]({% link _docs/studio/datadictionary/field-properties.md %}) property of the field.
 
@@ -25,7 +25,7 @@ There are several different types of plugins in Stonefield Query:
 
 * [Functions]({% link _docs/plugins/functions.md %}): these simple plugins provide methods called from various places in Horizon Reports, such as the Expression or Caption properties of a field.
 
-* [Report engine](vfps://Topic/_3X70PTD6Y): these plugins are called from various places during report engine processing, such as determining whether the current user can access a specific report.
+* [Report engine]({% link _docs/plugins/reportengine/index.md %}): these plugins are called from various places during report engine processing, such as determining whether the current user can access a specific report.
 
 * [Setup]({% link _docs/plugins/setup/index.md %}): setup plugins allow you to define additional settings that appear in the Horizon Reports Setup Wizard.
 
