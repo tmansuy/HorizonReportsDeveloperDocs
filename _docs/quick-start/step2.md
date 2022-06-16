@@ -11,7 +11,7 @@ The next step is customizing the reporting project created from your database. W
 
 * *Table*: the only property you need to fill in for a table is the caption, the descriptive heading the user sees rather than the real table name. There are other properties available as well, including Reportable, Data Group, and Roles. See the [Table Properties](vfps://Topic/_0PR0RMH8X) topic for a complete list.
 
-* *Field*: at a minimum, fill in the Caption for each field. Other properties, such as Format, Reportable, Sortable, Filterable, and Expression, can be changed as necessary. See the [Field Properties](vfps://Topic/_0OY0TQXLS) topic for a complete list of the properties for a field.
+* *Field*: at a minimum, fill in the Caption for each field. Other properties, such as Format, Reportable, Sortable, Filterable, and Expression, can be changed as necessary. See the [Field Properties]({% link _docs/studio/datadictionary/field-properties.md %}) topic for a complete list of the properties for a field.
 
 * *Relation*: you need to define a relation for each pair of tables, specifying the tables, the fields to join them on (or the join expression if it's more complex than pairs of fields), and the join type. See the [Relation Properties](vfps://Topic/_0OY0TY4HU) topic for more information.
 

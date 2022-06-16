@@ -213,7 +213,7 @@ The following properties appear for real fields.
 
     * *YNToBoolValueConverter*: converts "Y" to true and "N" to false.
 
-    You can create your own [value converter plugins](vfps://Topic/_3QW0PG1T9) and then choose the appropriate one from the drop-down list.
+    You can create your own [value converter plugins]({% link _docs/plugins/valueconverter/index.md %}) and then choose the appropriate one from the drop-down list.
 
 * *Output type*: this specifies the data type for the field as it appears in the result set for a report. It's normally set automatically for a field using a value converter but there may be times when you have to set it manually.
 

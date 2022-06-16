@@ -21,7 +21,7 @@ The field the value converter is operating on.
 A list of values for the field.
 
 ## Example
-This example is taken from EnumeratedFieldValueConverterString, one of the built-in value converters. It's used when you specify that a String field contains enumerated values in the Special page of the [properties pane](vfps://Topic/_0OY0TQXLS) for the field. (Not all the code for the class is shown here, only the relevant parts.) When the DataEngine sets the Field property for the converter, the getter for that property calls LoadPluginData to load an XmlDocument object with the contents of the PluginData property of the field. Here's an example of what that property contains (automatically filled in by Horizon Reports Studio from the values you enter in the values list):
+This example is taken from EnumeratedFieldValueConverterString, one of the built-in value converters. It's used when you specify that a String field contains enumerated values in the Special page of the [properties pane]({% link _docs/studio/datadictionary/field-properties.md %}) for the field. (Not all the code for the class is shown here, only the relevant parts.) When the DataEngine sets the Field property for the converter, the getter for that property calls LoadPluginData to load an XmlDocument object with the contents of the PluginData property of the field. Here's an example of what that property contains (automatically filled in by Horizon Reports Studio from the values you enter in the values list):
 
     <values>
       <value value="1" result="Fedex" />

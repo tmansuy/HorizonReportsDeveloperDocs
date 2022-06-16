@@ -22,13 +22,13 @@ Sometimes, the way a value is stored in a database isn't the way the user expect
 
 * *YNToBoolValueConverter*: converts "Y" to true and "N" to false.
 
-* *DisplayFieldFromRelatedTableConverter*: used when you configure a field to display another field from a related table in the Special page of the [properties pane](vfps://Topic/_0OY0TQXLS) for the field. This converter doesn't appear in the list of value converters in the Calc page.
+* *DisplayFieldFromRelatedTableConverter*: used when you configure a field to display another field from a related table in the Special page of the [properties pane]({% link _docs/studio/datadictionary/field-properties.md %}) for the field. This converter doesn't appear in the list of value converters in the Calc page.
 
-* *EnumeratedFieldValueConverterInt32*: used when you specify that an Int32 field contains enumerated values in the Special page of the [properties pane](vfps://Topic/_0OY0TQXLS) for the field. This converter doesn't appear in the list of value converters in the Calc page.
+* *EnumeratedFieldValueConverterInt32*: used when you specify that an Int32 field contains enumerated values in the Special page of the [properties pane]({% link _docs/studio/datadictionary/field-properties.md %}) for the field. This converter doesn't appear in the list of value converters in the Calc page.
 
 * *EnumeratedFieldValueConverterString*: like EnumeratedFieldValueConverterInt32, but used when you specify that a String field contains enumerated values.
 
-You specify a value converter for a field by choosing it from the *Value converter* drop-down list in the Calc page of the [field properties editor](vfps://Topic/_0OY0TQXLS) for the field. That list shows the built-in value converter plugins plus any plugins contained in DLLs you put in the Plugins folder of the project. When data is retrieved from the database, the report writer calls the Convert method of the value converter for each field in each row of the result set to convert the value as necessary. When the user creates a filter for a field, the report writer calls the ConvertBack method of the value converter to convert the filter value to the expected value for the WHERE clause.
+You specify a value converter for a field by choosing it from the *Value converter* drop-down list in the Calc page of the [field properties editor]({% link _docs/studio/datadictionary/field-properties.md %}) for the field. That list shows the built-in value converter plugins plus any plugins contained in DLLs you put in the Plugins folder of the project. When data is retrieved from the database, the report writer calls the Convert method of the value converter for each field in each row of the result set to convert the value as necessary. When the user creates a filter for a field, the report writer calls the ConvertBack method of the value converter to convert the filter value to the expected value for the WHERE clause.
 
 A value converter plugin implements the *IValueConverterPlugin* interface and uses the ValueConverterPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 

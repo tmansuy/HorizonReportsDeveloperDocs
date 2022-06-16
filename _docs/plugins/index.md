@@ -13,7 +13,7 @@ Data dictionary properties and configuration settings can only take Horizon Repo
 
 * *Calling stored procedures*. For a variety of reasons (security, performance, or because the DBA says so), you may want to access the data in a table via a stored procedure rather than by a SQL statement. Since Horizon Reports doesn't know the name of the stored procedure to call or the parameters to pass to it, you have to put code in the [Select](vfps://Topic/_3QV0W6BRP) method of a plugin for the table.
 
-* *Calculated fields*. You may have a [calculated field](vfps://Topic/_0U10UENKF) for which a simple expression won't suffice. For example, suppose the commission for a sale is set to a sliding scale, so higher sales amounts receive a higher commission percentage. In this case, you may have to use a control structure such as a switch statement to determine the amount. The code for this goes into a function plugin called from the [Expression](vfps://Topic/_0OY0TQXLS) property of the field.
+* *Calculated fields*. You may have a [calculated field](vfps://Topic/_0U10UENKF) for which a simple expression won't suffice. For example, suppose the commission for a sale is set to a sliding scale, so higher sales amounts receive a higher commission percentage. In this case, you may have to use a control structure such as a switch statement to determine the amount. The code for this goes into a function plugin called from the [Expression]({% link _docs/studio/datadictionary/field-properties.md %}) property of the field.
 
 There are several different types of plugins in Stonefield Query:
 
@@ -29,7 +29,7 @@ There are several different types of plugins in Stonefield Query:
 
 * [Setup]({% link _docs/plugins/setup/index.md %}): setup plugins allow you to define additional settings that appear in the Horizon Reports Setup Wizard.
 
-* [Value converter](vfps://Topic/_3QW0PG1T9): these plugins convert a value stored in a field into the value you want displayed to the user. For example, some applications store dates as numeric values, so January 13, 2013 is stored as 20130113. A value converter converts the numeric value to a date value for display in a report, and a date value used as a filter into a numeric value that can be used in the WHERE clause of a SQL statement.
+* [Value converter]({% link _docs/plugins/valueconverter/index.md %}): these plugins convert a value stored in a field into the value you want displayed to the user. For example, some applications store dates as numeric values, so January 13, 2013 is stored as 20130113. A value converter converts the numeric value to a date value for display in a report, and a date value used as a filter into a numeric value that can be used in the WHERE clause of a SQL statement.
 
 * [Values method](vfps://Topic/_3QW0STVGI): these plugins allow you to programmatically define how to display a list of distinct values for a field rather than having Horizon Reports issue a SELECT DISTINCT SQL statement when the user clicks the Values button.
 
