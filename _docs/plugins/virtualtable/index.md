@@ -8,7 +8,7 @@ parent: Plugins
 
 Since a virtual table doesn't really exist, the report writer can't send a SQL statement to the database engine to retrieve the data for it. Instead, you have to write a plugin to create the result set for the virtual table.
 
-A virtual table plugin implements the [IVirtualTablePlugin](vfps://Topic/Interface%20IStonefieldQueryVirtualTablePlugin) interface and uses the VirtualTablePlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A virtual table plugin implements the *IVirtualTablePlugin* interface and uses the VirtualTablePlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 ### IVirtualTablePlugin
 Here's the definition of IVirtualTablePlugin:

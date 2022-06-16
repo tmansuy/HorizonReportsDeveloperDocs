@@ -8,7 +8,7 @@ parent: Plugins
 
 Data dictionary plugins can be used to customize the data dictionary at runtime, such as programmatically adding custom fields that exist in the end-user's database to your project's data dictionary, or to determine what version the database is so [versioned objects](vfps://Topic/_2M70UOIFZ) are used correctly.
 
-A data dictionary plugin implements the [IDataDictionaryPlugin](vfps://Topic/Interface%20IStonefieldQueryDataDictionaryPlugin) interface and uses the DataDictionaryPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A data dictionary plugin implements the *IDataDictionaryPlugin* interface and uses the DataDictionaryPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 
 ## IDataDictionaryPlugin

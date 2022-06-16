@@ -8,7 +8,7 @@ parent: Plugins
 
 Report engine plugins have a couple of purposes: providing an additional layer of security or report control by allowing you to programmatically determine which users can access which reports, and altering a report run, such as changing data retrieval or the report layout.
 
-A report engine plugin implements the [IReportEnginePlugin](vfps://Topic/Interface%20IStonefieldQueryReportEnginePlugin) interface and uses the ReportEnginePlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A report engine plugin implements the *IReportEnginePlugin* interface and uses the ReportEnginePlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 ### IReportEnginePlugin
 Here's the definition of IReportEnginePlugin:

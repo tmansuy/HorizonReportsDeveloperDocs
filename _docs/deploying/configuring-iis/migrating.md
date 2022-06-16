@@ -13,10 +13,10 @@ It's a good idea to make a complete backup of the contents of the web site folde
 Custom "appsettings" in web.config are no longer supported. Previously defined settings in web.config need to be moved to [options.json]({% link _docs/how-to/configuring.md %})
 
 ## Application pool
-The web application no longer supports using a shared application pool. If you previously hosted with a shared pool, create a new [dedicated application pool](VFPS://Topic/_44z0xpttm).
+The web application no longer supports using a shared application pool. If you previously hosted with a shared pool, create a new [dedicated application pool]({% link _docs/deploying/configuring-iis/index.md %}).
 
 ## Migrating existing data and settings
-It's recommended to migrate to a new application folder for this release. Once you create the new folder, make sure to set up the permissions as discussed in [Configuring IIS](VFPS://Topic/_44z0xpttm).
+It's recommended to migrate to a new application folder for this release. Once you create the new folder, make sure to set up the permissions as discussed in [Configuring IIS]({% link _docs/deploying/configuring-iis/index.md %}).
 The **App_Data**, **Project_Data**, and **Licenses** folders contain all the files that should be migrated to the new release. 
 
 ![](images/remainingfolders.png)

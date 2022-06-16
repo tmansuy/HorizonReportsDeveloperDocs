@@ -8,7 +8,7 @@ parent: Plugins
 
 The usual mechanism for retrieving the values for a field in the report writer is to use a SELECT DISTINCT SQL statement. However, you can use a values method plugin to override this behavior for specific fields. This can be useful if the normal SELECT DISTINCT behavior isn't desirable (for example, if the underlying table is very large).
 
-A values method plugin implements the [IValuesMethodPlugin](vfps://Topic/Interface%20IStonefieldQueryVirtualTablePlugin) interface and uses the ValuesMethodPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A values method plugin implements the *IValuesMethodPlugin* interface and uses the ValuesMethodPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 ### IValuesMethodPlugin
 Here's the definition of IValuesMethodPlugin:

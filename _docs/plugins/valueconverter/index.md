@@ -30,7 +30,7 @@ Sometimes, the way a value is stored in a database isn't the way the user expect
 
 You specify a value converter for a field by choosing it from the *Value converter* drop-down list in the Calc page of the [field properties editor](vfps://Topic/_0OY0TQXLS) for the field. That list shows the built-in value converter plugins plus any plugins contained in DLLs you put in the Plugins folder of the project. When data is retrieved from the database, the report writer calls the Convert method of the value converter for each field in each row of the result set to convert the value as necessary. When the user creates a filter for a field, the report writer calls the ConvertBack method of the value converter to convert the filter value to the expected value for the WHERE clause.
 
-A value converter plugin implements the [IValueConverterPlugin](vfps://Topic/Interface%20IStonefieldQueryValueConverterPlugin) interface and uses the ValueConverterPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A value converter plugin implements the *IValueConverterPlugin* interface and uses the ValueConverterPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 ### IValueConverterPlugin
 Here's the definition of IValueConverterPlugin:

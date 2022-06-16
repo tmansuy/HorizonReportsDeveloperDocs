@@ -8,7 +8,7 @@ parent: Plugins
 
 Application plugins allow you to perform customization tasks at certain application-level events.
 
-An application plugin implements the [IApplicationPlugin](vfps://Topic/Interface%20IStonefieldQueryApplicationPlugin) interface and uses the ApplicationPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+An application plugin implements the *IApplicationPlugin* interface and uses the ApplicationPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 ## IApplicationPlugin
 Here's the definition of IApplicationPlugin:

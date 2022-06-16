@@ -34,7 +34,7 @@ The simplest way to publish to a Microsoft Azure server is to publish to a local
 
 * Double-click the RDP file to connect to the Azure server.
 
-* Create a [new site](vfps://Topic/_44Z0XPTTM) using IIS Manager.
+* Create a [new site]({% link _docs/deploying/configuring-iis/index.md %}) using IIS Manager.
 
 * Using Windows Explorer, copy the files from the local publish folder to the virtual directory on the Azure server.
 

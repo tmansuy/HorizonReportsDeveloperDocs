@@ -8,7 +8,7 @@ parent: Plugins
 
 Setup plugins allow you to specify additional settings in the Setup Wizard. The report writer doesn't use these settings, but another of your plugins could, by retrieving the value of the setting and then doing something with it.
 
-A setup plugin implements the [ISetupPlugin](vfps://Topic/Interface%20IStonefieldQuerySetupPlugin) interface and uses the SetupPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A setup plugin implements the *ISetupPlugin* interface and uses the SetupPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 ### ISetupPlugin
 Here's the definition of ISetupPlugin:

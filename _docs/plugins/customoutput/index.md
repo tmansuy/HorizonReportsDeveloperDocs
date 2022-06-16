@@ -8,7 +8,7 @@ parent: Plugins
 
 A Custom Output plugin allows you to specify a custom output type for a schedule. By default, users can email a report or upload it to an FTP site. This plugin allows you to specify a new type, like uploading to Azure, or storing in a local document database, for example.
 
-A Custom Output plugin implements the [ICustomReportOutputPlugin](vfps://Topic/Interface%IStonefieldQueryCustomReportOutputPlugin) interface and uses the CustomReportOutputPluginAttribute attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A Custom Output plugin implements the *ICustomReportOutputPlugin* interface and uses the CustomReportOutputPluginAttribute attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 ## ICustomReportOutputPlugin
 Here's the definition of ICustomReportOutputPlugin:
