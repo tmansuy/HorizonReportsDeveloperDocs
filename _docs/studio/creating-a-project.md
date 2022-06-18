@@ -9,7 +9,7 @@ To create a version of Horizon Reports specific for an application's data, you m
 
 The first time you start Horizon Reports, you'll automatically be prompted to create a project. To create additional projects beyond the first, you can click the *New* menu item in the Projects menu.
 
-![](images/newproject.png)
+![](/assets/images/newproject.png)
 
 The new project dialog has the following options:
 

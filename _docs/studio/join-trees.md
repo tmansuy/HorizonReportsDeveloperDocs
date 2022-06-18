@@ -17,7 +17,7 @@ The join weight property of a relationship can help you choose the optimum path,
 
 To create a join tree, choose the *Join Trees* button on the toolbar, then click the Add button (![](images\addbutton.png)).
 
-![](images/JoinTree.png)
+![](/assets/images/JoinTree.png)
 
 In the *Tables* list, choose the tables that you're interested in specifying how to join. The *Joins* list shows all relationships for those two tables. Turn on the check mark for those relationships you want used in the join tree. Double-click a relationship to jump to that relationship in the databases TreeView.
 

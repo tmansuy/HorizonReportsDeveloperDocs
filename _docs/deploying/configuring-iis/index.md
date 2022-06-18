@@ -16,26 +16,26 @@ IIS uses application pools to isolate an application from other applications run
 
 Open IIS Manager. In the Connections panel on the left, expand the entry for your server and choose Application Pools.
 
-![](images/applicationpoolsdefault.png)
+![](/assets/images/applicationpoolsdefault.png)
 
 In the Actions panel on the right, click *Add Application Pool...*.
 
-![](images/ADDAPPLICATIONPOOL.PNG)
+![](/assets/images/ADDAPPLICATIONPOOL.PNG)
 
 Give the application pool a name you can easily associate with your reporting application. For *.NET CLR version*, choose *No Managed Code*. *Managed pipeline mode* must be set to *Integrated*. When you're finished, click OK and you'll see the application pool listed along with the other applications pools.
 
-![](images/applicationpooladded.png)
+![](/assets/images/applicationpooladded.png)
 
 There are a number of advanced settings that can be modified for an application pool to change how it behaves. If you plan to use the Scheduler, one change to the default settings is [required]({% link _docs/deploying/configuring-iis/app-pool-settings.md %}). To access advanced settings, select the application pool in the list and in the Actions pane, click *Advanced Settings...*.
 
 ## Deploying project files
 Publish your project as discussed in the [Publishing Stonefield Query]({% link _docs/deploying/publishing.md %}) help topic. You can choose to publish to an FTP location or to a folder on the machine. If you aren't publishing on the web server, transfer the contents of the "published to" folder to the web server. A common practice is to create a subdirectory in C:\inetpub for each web application.
 
-![](images/projectfilesdeployed.png)
+![](/assets/images/projectfilesdeployed.png)
 
 The application pool [identity]({% link _docs/deploying/configuring-iis/app-pool-settings.md %}) requires read and execute permissions to the top-level application folder (shown as HRWeb in this example) and full read and write permissions to the App_Data, Licenses, and Logs folders. If you're using the new preferred publishing method, the App_Data, Licenses, and Logs folders may not already exist. In that case, create them, then set the necessary permissions.
 
-![](images/securitydefault.png)
+![](/assets/images/securitydefault.png)
 
 1. In a File Explorer window, navigate to the folder containing your top-level application folder, right-click it, and choose *Properties*.
 
@@ -49,7 +49,7 @@ The application pool [identity]({% link _docs/deploying/configuring-iis/app-pool
 
 5. Double check that with the DefaultAppPool user (for example, "HRWeb") selected in the top list, the Read & execute, List folder contents, and Read items are checked under the Allow column. Click OK and then OK again to save the changes.
 
-![](images/securityuseradded.png)
+![](/assets/images/securityuseradded.png)
 
 Repeat this process for the App_Data, Licenses, and Logs folders. You don't need to add the user identity after you click the Edit button because the identity you added to the parent folder is inherited for these subfolders. Also, remember that the application pool needs full read and write access to these folders, so click the "Full Control" checkbox under the Allow column after choosing the proper user name in the list.
 
@@ -64,11 +64,11 @@ You can host Horizon Reports as a standalone application or as a child applicati
 
 ### Creating a standalone application
 
-![](images/sitesdefault.png)
+![](/assets/images/sitesdefault.png)
 
 In IIS Manager, expand the server node in the Connections panel and click the Sites node. In the Actions panel at the right, click *Add Web Site...*.
 
-![](images/addwebsite.png)
+![](/assets/images/addwebsite.png)
 
 Give the site a name and choose the application pool you created previously for this purpose. For the physical path, choose the top level application folder you copied to the server previously.
 
@@ -78,22 +78,22 @@ Next, choose your SSL Certificate. If you have a wildcard-type certificate, you'
 
 If you don't want to use SSL, create an *http* binding.
 
-![](images/addbinding.png)
+![](/assets/images/addbinding.png)
 
 Choose *http* for *Type*. Set the IP Address setting to the same thing you chose when creating the site and leave the port as 80. For host name, if you used a subdomain when creating the site, enter the same subdomain here.
 
 ### Creating a child application
 When you add Horizon Reports to IIS as a child application, it is addressed with the URL of the parent site plus the name of a virtual directory you create for it.
 
-![](images/virtualdirectoriesdefault.png)
+![](/assets/images/virtualdirectoriesdefault.png)
 
 The top-level application folder can be located in any physical location on the web server, but you'll need to add a virtual directory that acts as a mapping between that location and the URL used to refer to this child application. To add a virtual directory, select the parent site in the Connections panel, click *View Virtual Directories* in the Actions panel, then click *Add Virtual Directory...*.
 
-![](images/addvirtualdirectory.png)
+![](/assets/images/addvirtualdirectory.png)
 
 The alias you choose determines the "folder" the site appears under in the URL. For example, if you choose an alias of "reporting" and the domain of your top level site is www.mydomain.com, users will navigate to the report writer via "www.mydomain.com/reporting". After choosing an alias, set the physical path to the top-level application folder you copied to the web server earlier.
 
-![](images/converttoapplication.png)
+![](/assets/images/converttoapplication.png)
 
 IIS needs to know that virtual directory you just created contains an application and not just a static web site. To do that, expand the node for your parent site in the Connections panel, right-click the entry for the virtual directory you created, and choose Convert to Application from the shortcut menu. In the dialog that appears, change *Application pool* to the application pool you created earlier. After clicking OK to save these changes, you may need to restart the IIS web server before you can navigate to the site. To do that, select the server in the Connections panel and click the *Restart* link in the Action panel.
 

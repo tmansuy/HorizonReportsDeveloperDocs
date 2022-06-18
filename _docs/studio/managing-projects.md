@@ -7,7 +7,7 @@ parent: Horizon Reports Studio
 
 When you first navigate to Horizon Reports Studio, the active project is opened initially. If you wish to open a different project, click the *Manage* menu item in the Projects menu.
 
-![](images/manageprojects.png)
+![](/assets/images/manageprojects.png)
 
 To open a different project, choose the desired project from the *Selected Project* drop down, then click *Open*.
 

@@ -9,7 +9,7 @@ grand_parent: Deploying Horizon Reports
 In most cases, the default application pool settings work fine with Horizon Reports. The following settings may need to be changed depending on the behavior you desire.
 
 
-![](images/applicationpooladvanced.png)
+![](/assets/images/applicationpooladvanced.png)
 
 * *Enable 32-Bit Applications*: In some cases, you might need the web application to run as a 32-bit application. For example, you may needs to access an ODBC DSN defined using the 32-bit DSN manager. In this case, set this option to **True**.
 

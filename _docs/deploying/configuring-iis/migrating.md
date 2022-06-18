@@ -19,7 +19,7 @@ The web application no longer supports using a shared application pool. If you p
 It's recommended to migrate to a new application folder for this release. Once you create the new folder, make sure to set up the permissions as discussed in [Configuring IIS]({% link _docs/deploying/configuring-iis/index.md %}).
 The **App_Data**, **Project_Data**, and **Licenses** folders contain all the files that should be migrated to the new release. 
 
-![](images/remainingfolders.png)
+![](/assets/images/remainingfolders.png)
 
 After this, continue publishing to the new application folder as discussed in the [Publishing Horizon Reports]({% link _docs/deploying/publishing.md %}) help topic.
 
