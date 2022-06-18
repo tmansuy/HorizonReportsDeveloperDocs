@@ -35,7 +35,7 @@ There are several different types of plugins in Stonefield Query:
 
 * [Virtual table]({% link _docs/plugins/virtualtable/index.md %}): these plugins return a DataTable to Horizon Reports when the user reports on a virtual table.
 
-<%-- * [Web action]({% link _docs/plugins/webaction/index.md %}): these plugins support custom actions. The plugin's PerformAction method is called when its corresponding URL is navigated to, and the method is responsible for returning an appropriate HTTP response. %>
+* [Web action]({% link _docs/plugins/webaction/index.md %}): these plugins support custom actions. The plugin's PerformAction method is called when its corresponding URL is navigated to, and the method is responsible for returning an appropriate HTTP response.
 
 Horizon Reports supports any .NET language for a plugin, and targets .NET 6.  When creating a new plugin project, you should create a class library that targets net6.0.
 
