@@ -8,7 +8,7 @@ parent: Plugins
 
 Web action plugins support custom actions in a web browser. The plugin's PerformAction method is called when its corresponding URL is navigated to, and the method returns an appropriate HTTP response.
 
-A web action plugin implements the [IWebActionPlugin]({% link _docs/plugins/webaction/select.md %}) interface and uses the WebActionPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A web action plugin implements the [IWebActionPlugin]({% link _docs/plugins/webaction/index.md %}) interface and uses the WebActionPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 
 ### IWebActionPlugin
