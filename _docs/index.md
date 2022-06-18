@@ -7,7 +7,7 @@ permalink: /
 has_children: true
 ---
 
-![](/assets//assets/images/banner.png)
+![](/assets/images/banner.png)
 
 Horizon Reports is an award-winning, easy-to-use, ad-hoc report writer. It can query against many different sources of data, including:
 
