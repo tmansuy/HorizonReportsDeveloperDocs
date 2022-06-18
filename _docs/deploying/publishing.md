@@ -26,7 +26,7 @@ The simplest way to publish to a Microsoft Azure server is to publish to a local
 
 * Make sure the Remote Desktop Connection (RDP) to connect to the Azure server is configured to allow access to a drive on the local system. To do that, right-click the RDP file and choose Edit from the shortcut menu. Select the Local Resources tab, click the More button, and turn on one or more local drives.
 
-    ![](/assets/images/rdpsharing.png)
+    ![](/assets/images/rdp.png)
 
 * Download the [web application installer](https://www.horizon-reports.com/downloads/current/hrwebsetup.exe) and install to a local folder.
 
