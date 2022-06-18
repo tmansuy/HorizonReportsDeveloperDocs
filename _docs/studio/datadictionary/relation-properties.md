@@ -47,4 +47,4 @@ A join can be defined as a list of field pairs, or as a SQL expression (complex 
 
     Use a comma-delimited list of values if the relation was added in one version and later removed. For example, "5.3+,5.5-" means it was added in version 5.3 and removed in version 5.6.
 
-    > @icon-info-circle Multiple relations between the same pair of tables are allowed if they have different version numbers.
+    > <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Multiple relations between the same pair of tables are allowed if they have different version numbers.

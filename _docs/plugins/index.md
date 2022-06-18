@@ -76,13 +76,13 @@ namespace HorizonReports.Plugins
 
 Application is a reference to the Horizon Reports Application object, which means you have access the report writer services from your plugin.
 
-> @icon-info-circle In a plugin class, you have to use the [Import] attribute on the Application member to ensure its value is set by our dependency injection framework. For example:
+> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> In a plugin class, you have to use the [Import] attribute on the Application member to ensure its value is set by our dependency injection framework. For example:
 ```csharp
 [Import]
 public IHorizonReportsAppService Application { get; set; }
 ```
 
-> @icon-info-circle Application is null in the constructor of the plugin, so your code can't use it in that method or any methods called from the constructor.
+> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Application is null in the constructor of the plugin, so your code can't use it in that method or any methods called from the constructor.
 
 The plugin attributes have members in common:
 

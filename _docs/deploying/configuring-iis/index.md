@@ -43,7 +43,7 @@ The application pool [identity]({% link _docs/deploying/configuring-iis/app-pool
 
 3. In the text box, enter the account for the user identity you chose for the application pool in the previous section. If you kept the default ApplicationPoolIdentity setting, enter the name of your application pool with "IIS AppPool" as the prefix. For example, if you called the app pool "HRWeb", enter "IIS AppPool\HRWeb" (without the quotes).
 
-> @icon-info-circle The identity associated with the application pool is located on the web server itself. If your web server is part of a domain, you may need to change the *From this location* setting from the domain to the name of the server.
+> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> The identity associated with the application pool is located on the web server itself. If your web server is part of a domain, you may need to change the *From this location* setting from the domain to the name of the server.
 
 4. Click Check Names, then OK.
 

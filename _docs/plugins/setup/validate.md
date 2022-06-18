@@ -17,7 +17,7 @@ public bool Validate(Dictionary<string, string> values)
 *values*
 A list of the settings to validate.
 
-> @icon-info-circle The dictionary has upper case keys, regardless of what case was originally used.
+> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> The dictionary has upper case keys, regardless of what case was originally used.
 
 ## Return value
 True if the values are valid.

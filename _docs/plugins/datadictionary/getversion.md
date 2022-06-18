@@ -21,7 +21,7 @@ The table, field, or join being checked for version.
 ## Return value
 The version number of the object as a string or a blank string if there is no version number.
 
-> @icon-info-circle For performance reasons, you'll likely want to look up the version information once, cache it, and use the cached value the next time the method is called. One thing that complicates this is that each data source may have its own version information, so you should store and look up the cache by data source. The sample code below shows an example of how to do that.
+> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> For performance reasons, you'll likely want to look up the version information once, cache it, and use the cached value the next time the method is called. One thing that complicates this is that each data source may have its own version information, so you should store and look up the cache by data source. The sample code below shows an example of how to do that.
 
 ## Example
 Suppose the first two characters of the table name represent the module the table belongs to (for example, ARCUS is the customers table in the AR, or Accounts Receivable, module). Also suppose a table named CSAPP contains the version number of each module. The following code returns the version number from the current database for the module the specified table, field, or join belongs to.

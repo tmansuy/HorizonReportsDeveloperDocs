@@ -201,7 +201,7 @@ The following properties appear for real fields.
 
     * *LookupFieldConverter*: looks up a value in another table and displays a field from that table. This is similar to the *Display field from related table* feature discussed below but doesn't require a relationship between the tables. 
 
-        > @icon-info-circle The value converter uses a SQL statement with a subquery in the JOIN clause and not all database engines (for example, Microsoft Access) support that.
+        > <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> The value converter uses a SQL statement with a subquery in the JOIN clause and not all database engines (for example, Microsoft Access) support that.
 
     * *StringToDateTimeValueConverter*: converts a string stored in one of several formats into the corresponding date value. If you don't specify otherwise, the string is expected to be in the format YYYY-MM-DD HH:MM:SS.
 

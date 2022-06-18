@@ -18,7 +18,7 @@ public bool SaveSettings(Dictionary<string,
 *settings*
 A list of the settings to save. See [GetSettings]({% link _docs/plugins/setup/getsettings.md %}) for a description.
 
-> @icon-info-circle The dictionary has upper case keys, regardless of what case was originally used.
+> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> The dictionary has upper case keys, regardless of what case was originally used.
 
 ## Return value
 True if it succeeded.
