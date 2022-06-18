@@ -8,7 +8,7 @@ parent: Plugins
 
 Link action plugins allow you to create custom events to be executed when a user clicks a field in a report. For example, you may want to display an address in Google Maps when the user clicks it.
 
-A link action plugin implements the [ILinkActionPlugin](VFPS://Topic/_57M0WSOEO) interface and uses the LinkActionPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
+A link action plugin implements the [ILinkActionPlugin]({% link _docs/plugins/linkaction/index.md %}) interface and uses the LinkActionPlugin attribute. Your plugin needs references to the HorizonReports.Api and System.ComponentModel.Composition Nuget packages.
 
 ### ILinkActionPlugin
 Here's the definition of ILinkActionPlugin:

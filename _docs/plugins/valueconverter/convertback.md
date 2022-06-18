@@ -21,4 +21,4 @@ The value to convert.
 The converted value.
 
 ## Example
-See the ConvertBack method of the sample code in the [Convert help topic](vfps://Topic/_3QW0Q325E).
+See the ConvertBack method of the sample code in the [Convert topic]({% link _docs/plugins/valueconverter/convert.md %}).

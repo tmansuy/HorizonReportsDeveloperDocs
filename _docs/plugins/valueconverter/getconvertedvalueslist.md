@@ -6,7 +6,7 @@ parent: Value Converter
 grand_parent: Plugins
 ---
 
-The [IsListType](vfps://Topic/_3QW0RCQQR) method determines whether the value converter maintains a list of possible values. If it returns true, the GetConvertedValuesList method is used to get a list of values to display to the user when the Values button is pressed. If it returns false, the report writer does the usual mechanism to get the values: either using a [values method plugin](vfps://Topic/_3QW0STVGI) for the field or using a SELECT DISTINCT SQL statement.
+The [IsListType]({% link _docs/plugins/valueconverter/islisttype.md %}) method determines whether the value converter maintains a list of possible values. If it returns true, the GetConvertedValuesList method is used to get a list of values to display to the user when the Values button is pressed. If it returns false, the report writer does the usual mechanism to get the values: either using a [values method plugin]({% link _docs/plugins/valuesmethod/index.md %}) for the field or using a SELECT DISTINCT SQL statement.
 
 ## Syntax
 ```csharp

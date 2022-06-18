@@ -7,10 +7,10 @@ parent: How To
 
 The Security dialog in Horizon Reports is used to define users and roles and what permissions roles have. However, you can also set up security programmatically if you wish.
 
-First, see the information in the [Using Horizon Reports from Other Applications](vfps://Topic/_0QN0W63BM) topic for details on how to instantiate and set up the Application object. Then you can use code as shown below.
+First, see the information in the [Using Horizon Reports from Other Applications]({% link _docs/how-to/usingfromotherapps.md %}) topic for details on how to instantiate and set up the Application object. Then you can use code as shown below.
 
 ## Adding roles
-To add a role, add a Role object to the Security's Roles collection. To save the new role to the Roles [security table](vfps://Topic/_1OI11ZMWL), call SaveItem. For example:
+To add a role, add a Role object to the Security's Roles collection. To save the new role to the Roles, call SaveItem. For example:
 
 ```csharp
 Role role = _app.Security.Roles["My Role"];

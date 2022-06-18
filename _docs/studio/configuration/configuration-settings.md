@@ -10,13 +10,13 @@ Configuration settings are maintained with the Configuration Settings tab in Stu
 
 ## Application Settings
 
-* *Support Multi-Languages*: Horizon Reports can support [multiple languages](vfps://Topic/_12U0SEQQV). However, you may decide to only support a single language. In that case, you don't want the Language option to appear in the Options dialog. Set this to False in this case. You can set the default language using the Default Language setting.
+* *Support Multi-Languages*: Horizon Reports can support [multiple languages]({% link _docs/studio/multi-language.md %}). However, you may decide to only support a single language. In that case, you don't want the Language option to appear in the Options dialog. Set this to False in this case. You can set the default language using the Default Language setting.
 
 * *Default Language*: This setting specifies what language is used by default. This is useful when you want the initial language used by the report writer to be something other than English, whether or not the Support Multi-Languages setting is set to True. Select the desired language from the drop-down list.
 
 > @icon-info-circle The only languages displayed are the ones for which there are resource files in the Resources folder.
 
-* *Allow Access to Reports When No Access to Fields*: [Role-based security](vfps://Topic/_1O80WKRRU) in the data dictionary allows you to define which roles have access to certain fields. For example, you may want all users to see most fields in the Employees table but only managers should be able to see the Salary field. In that case, you'd create a role in Studio named Managers and set the Roles property of the Salary field to that role. Users who aren't in the Managers role cannot see the Salary field in the Report Writer, so they cannot include it in a report or filter on it. However, what happens to a report that includes the Salary field that someone in the Managers role created?
+* *Allow Access to Reports When No Access to Fields*: [Role-based security]({% link _docs/studio/security.md %}) in the data dictionary allows you to define which roles have access to certain fields. For example, you may want all users to see most fields in the Employees table but only managers should be able to see the Salary field. In that case, you'd create a role in Studio named Managers and set the Roles property of the Salary field to that role. Users who aren't in the Managers role cannot see the Salary field in the Report Writer, so they cannot include it in a report or filter on it. However, what happens to a report that includes the Salary field that someone in the Managers role created?
 Normally, such a report does not appear in the Reports Explorer for users who aren't in the Managers role. That means if you want a report showing employee information, you need two reports: one that includes Salary that Managers can see and one that does not that everyone else can see. What if you want to be able to create only one report which includes Salary but hide that field from non-Manager users?
 This setting allows you to do that. With this set to the default of False, only Manager users can see and run the report. Settting this to true allows non-Manager users to see and run the report but the report acts as if the Salary field wasn't added to it; the report runs but does not show the Salary field.
 If a non-Manager user edits the report, they get a warning message that the report contains some fields they don't have access to and if they save the report, those fields are lost. To prevent that from happening, you should set the security of the report so Everyone has read-only access to the report and Managers has full access.
@@ -26,9 +26,9 @@ Note that the email credentials used to send the email come from the "Demo Email
 
 * *Encrypt Connection Strings*: Studio stores the connection settings for the data dictionary database and the connection settings for the databases used for security, formulas, and tags tables. If you want the connection strings to be stored as encrypted values, set this setting to True.
 
-* *Conn. String for Horizon Reports Query data*: This specifies the connection string for the database used to store security, formulas, and tags. The default is a SQLite database named SQData.dat. See the [Using Other Databases for Security and Other Data](vfps://Topic/_42N0SBNWJ) topic for details on using a different database.
+* *Conn. String for Horizon Reports Query data*: This specifies the connection string for the database used to store security, formulas, and tags. The default is a SQLite database named SQData.dat. 
 
-* *Provider for Horizon Reports Query data*: This setting specifies the data provider to use for this database. The default is System.Data.SQLite. See the [Using Other Databases for Security and Other Data](vfps://Topic/_42N0SBNWJ) topic for details on using a different database.
+* *Provider for Horizon Reports Query data*: This setting specifies the data provider to use for this database.
 
 * *Automatically Query Values When Editing Filter*: If this setting is True, the report writer retrieves the unique values for the field in a filter condition as the user enters a value for the condition. Turn this off if this causes performance issues.
 
@@ -46,7 +46,7 @@ Note that the email credentials used to send the email come from the "Demo Email
 
 * *Company Facebook URL*: The Company Facebook URL property is the Facebook page you want linked to in the About dialog. Set this to your company's Facebook page URL to private-label or brand Horizon Reports.
 
-* *Sales Email*: If the *[Users can register on login page](vfps://Topic/_3XZ0KXKN5)* setting is true, when a user registers an account, an email is sent to the email address specified in Sales email. Set this to your company's sales email address to private-label or brand Horizon Reports.
+* *Sales Email*: If the *Users can register on login page* setting is true, when a user registers an account, an email is sent to the email address specified in Sales email. Set this to your company's sales email address to private-label or brand Horizon Reports.
 
 * *Support Email*: The Support Email property is the email address you want displayed in the About dialog. Set this to your company's support email address to private-label or brand Horizon Reports.
 
@@ -64,13 +64,13 @@ Note that the email credentials used to send the email come from the "Demo Email
 
 ## Data Settings
 
-* *Allow Multiple Data Sources*: If you want to allow your users to query on different sets of data, set this setting to True. When this setting is True, the Login page displays a drop-down list of data sources defined to Horizon Reports, allowing the user to choose which data source to query on. You can use the [GetDataSources](vfps://Topic/_0OV0TGF6C) method of a data engine plugin to add the data sources that should be available to the end user.
+* *Allow Multiple Data Sources*: If you want to allow your users to query on different sets of data, set this setting to True. When this setting is True, the Login page displays a drop-down list of data sources defined to Horizon Reports, allowing the user to choose which data source to query on. You can use the [GetDataSources]({% link _docs/plugins/dataengine/getdatasources.md %}) method of a data engine plugin to add the data sources that should be available to the end user.
 
 * *Trailing Spaces Insignificant in Joins*: Normally, trailing spaces in fields are insignificant when doing joins. For example, if the foreign key field in a child table contains "ABC     " (with several spaces at the end) and the primary key field in the parent table contains "ABC" (with no trailing spaces), the join usually works correctly. However, some database engines treat the trailing spaces as significant and the join won't work. In that case, turn this setting to false.
 
 * *Default Table For New Reports*: This property specifies which table is initially selected in the Data Selection step of the report wizards when the user creates a new report. If this setting is empty, the first table in alphabetical order (by caption, not real name) is selected. To change this setting, select the desired table from the drop-down list.
 
-* *Default Data Group for New Reports*: This property specifies which [data group](vfps://Topic/_0PR0RMH8X) is initially selected in Step 1 of the report wizards when the user creates a new report. To change this setting, select the desired data group from the drop-down list.
+* *Default Data Group for New Reports*: This property specifies which [data group]({% link _docs/studio/datadictionary/table-properties.md %}) is initially selected in Step 1 of the report wizards when the user creates a new report. To change this setting, select the desired data group from the drop-down list.
 
 * *Include Joins in the Where Clause*: Some database engines, such as Microsoft Access or older versions of Oracle, do not work properly with joins between tables specified in a JOIN clause of a SQL statement. Instead, they expect joins to be specified in the WHERE clause. For example, instead of using the following SQL statement for a query joining four tables:
 
@@ -125,7 +125,7 @@ In certain types of applications, such as an accounting system, you may want the
 
 * *Server Email SMTP Password*: This is the password of the mail account to send server messages from.
 
-* *Support Multi-Tenant Environment*: Set this setting to True to enable [multi-tenant support](vfps://Topic/_43A0WMOCI).
+* *Support Multi-Tenant Environment*: Set this setting to True to enable [multi-tenant support]({% link _docs/studio/multi-tenant.md %}).
 
 * *Filter Field for Queries in Multi Tenant Environment*: If all tenants share a database, but each table has a certain field containing an ID indicating which tenant the record belongs to, then use this setting to specify the field.
 
@@ -137,26 +137,26 @@ In certain types of applications, such as an accounting system, you may want the
 
 * *Allow Password Resets*: Set this to true to allow a user to request a password reset email in case they forget their password.
 
-* *ADFS Metadata Address*: The metadata address to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via ADFS.
+* *ADFS Metadata Address*: The metadata address to use if you're using [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via ADFS.
 
-* *ADFS Realm*: The realm (or WtRealm) address to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via ADFS.
+* *ADFS Realm*: The realm (or WtRealm) address to use if you're using [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via ADFS.
 
-* *OpenID Authority*: The Authority to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via OpenID Connect.
+* *OpenID Authority*: The Authority to use if you're using [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via OpenID Connect.
 
-* *OpenID Client ID*: The Client ID to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via OpenID Connect.
+* *OpenID Client ID*: The Client ID to use if you're using [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via OpenID Connect.
 
-* *OpenID Client Secret*: The Client secret to use if you're using [external authentication](vfps://Topic/_5h10oxyeb) via OpenID Connect.
+* *OpenID Client Secret*: The Client secret to use if you're using [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via OpenID Connect.
 
-* *Facebook App ID*: Set this value to your Facebook app ID if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Facebook.
+* *Facebook App ID*: Set this value to your Facebook app ID if you'd like to use [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via Facebook.
 
-* *Facebook App Secret*: Set this value to your Facebook app secret if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Facebook.
+* *Facebook App Secret*: Set this value to your Facebook app secret if you'd like to use [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via Facebook.
 
-* *Google Client ID*: Set this value to your Google client ID if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Google.
+* *Google Client ID*: Set this value to your Google client ID if you'd like to use [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via Google.
 
-* *Google Client Secret*: Set this value to your Google client secret if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Google.
+* *Google Client Secret*: Set this value to your Google client secret if you'd like to use [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via Google.
 
-* *Twitter Consumer Key*: Set this value to your Twitter consumer key if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Twitter.
+* *Twitter Consumer Key*: Set this value to your Twitter consumer key if you'd like to use [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via Twitter.
 
-* *Twitter Consumer Secret*: Set this value to your Twitter consumer secret if you'd like to use [external authentication](vfps://Topic/_5h10oxyeb) via Twitter.
+* *Twitter Consumer Secret*: Set this value to your Twitter consumer secret if you'd like to use [external authentication]({% link _docs/how-to/externalidentproviders.md %}) via Twitter.
 
 * *Timeout*: This specifies the timeout period in minutes for the current logged in user. If there is no activity for this period of time, the user is automatically logged out. The default is 20.

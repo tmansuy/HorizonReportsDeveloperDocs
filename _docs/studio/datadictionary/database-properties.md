@@ -24,7 +24,7 @@ The properties displayed are:
 
 * *Active*: if this setting is turned off, the database and its tables do not appear in the report writer.
 
-* *Version*: the database's [version number](vfps://Topic/_2M70UOIFZ). A blank value means the database is not versioned: it appears in the report writer regardless of the version of the application. For a database that isn't available in every version of the application, enter the version number followed by "+" to indicate the database appears in that version and higher versions and should not appear in lower versions (that is, the database was added in that version), "-" to indicate the database appears in that version and lower versions and should not appear in higher versions (that is, the database was removed in the next version), or no suffix to indicate the database appears only in that version and should not appear in any other version. For example, "5.3+" indicates the database is available starting in version 5.3 while "5.3-" indicates it was removed in version 5.4.
+* *Version*: the database's [version number]({% link _docs/studio/datadictionary/versioning.md %}). A blank value means the database is not versioned: it appears in the report writer regardless of the version of the application. For a database that isn't available in every version of the application, enter the version number followed by "+" to indicate the database appears in that version and higher versions and should not appear in lower versions (that is, the database was added in that version), "-" to indicate the database appears in that version and lower versions and should not appear in higher versions (that is, the database was removed in the next version), or no suffix to indicate the database appears only in that version and should not appear in any other version. For example, "5.3+" indicates the database is available starting in version 5.3 while "5.3-" indicates it was removed in version 5.4.
 
     Use a comma-delimited list of values if the database was added in one version and later removed. For example, "5.3+,5.5-" means it was added in version 5.3 and removed in version 5.6.
 
@@ -38,7 +38,7 @@ The properties displayed are:
 
     * *User can choose DSN*: this choice means the end-user can choose which physical database to connect to by selecting a DSN from a dialog in the report writer.
 
-    * *Scripted*: select this if you want to use a plugin to define how to connect to the database. This option provides the most flexibility because, for example, you can use the same run-time connection settings your main application uses. See the [GetDataSources](vfps://Topic/_0OV0TGF6C) topic for details on a database connection plugin.
+    * *Scripted*: select this if you want to use a plugin to define how to connect to the database. This option provides the most flexibility because, for example, you can use the same run-time connection settings your main application uses. See the [GetDataSources]({% link _docs/plugins/dataengine/getdatasources.md %}) topic for details on a database connection plugin.
 
     * *User can manage connection string*: this allows you to define the connection string for the database at runtime (in the Setup Wizard) without having to create a plugin to set the connection string. The connection string is stored in the encrypted datasources.xml file in the App_Data folder. This file should not be deployed to the web server but is created there the first time Horizon Reports is run.
 

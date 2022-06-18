@@ -35,7 +35,7 @@ A join can be defined as a list of field pairs, or as a SQL expression (complex 
 
     The choices for this setting are:
 
-    * *Use default*: use the value of the [How to Filter Unfavored Tables by Default](VFPS://Topic/_4KA0Q8KSS) configuration setting. Having a global setting allows you to change the overall mechanism used for the project without having to set it for every relationship.
+    * *Use default*: use the value of the [How to Filter Unfavored Tables by Default]({% link _docs/studio/configuration/configuration-settings.md %}) configuration setting. Having a global setting allows you to change the overall mechanism used for the project without having to set it for every relationship.
 
     * *Include in WHERE*: keep the filter condition in the WHERE clause for the SQL statement, so it acts like an inner join.
 
@@ -43,7 +43,7 @@ A join can be defined as a list of field pairs, or as a SQL expression (complex 
 
     * *Use subquery*: this is for more complicated cases. In this case, a subquery is used for the entire join and filter conditions.
 
-* *Version*: the relation's [version number](vfps://Topic/_2M70UOIFZ). A blank value means the relation is not versioned: it appears in the report writer regardless of the version of the database. For a relation that isn't available in every version of the database, enter the version number followed by "+" to indicate the relation appears in that version and higher versions and should not be used in lower versions (that is, the relation was added in that version), "-" to indicate the relation appears in that version and lower versions and should not be used in higher versions (that is, the relation was removed in the next version), or no suffix to indicate the relation appears only in that version and should not be used in any other version. For example, "5.3+" indicates the relation is available starting in version 5.3 while "5.3-" indicates it was removed in version 5.4.
+* *Version*: the relation's [version number]({% link _docs/studio/datadictionary/versioning.md %}). A blank value means the relation is not versioned: it appears in the report writer regardless of the version of the database. For a relation that isn't available in every version of the database, enter the version number followed by "+" to indicate the relation appears in that version and higher versions and should not be used in lower versions (that is, the relation was added in that version), "-" to indicate the relation appears in that version and lower versions and should not be used in higher versions (that is, the relation was removed in the next version), or no suffix to indicate the relation appears only in that version and should not be used in any other version. For example, "5.3+" indicates the relation is available starting in version 5.3 while "5.3-" indicates it was removed in version 5.4.
 
     Use a comma-delimited list of values if the relation was added in one version and later removed. For example, "5.3+,5.5-" means it was added in version 5.3 and removed in version 5.6.
 

@@ -6,7 +6,7 @@ parent: Data Dictionary
 grand_parent: Plugins
 ---
 
-If you use [versioning](vfps://Topic/_2M70UOIFZ) in your data dictionary, you need a way to determine the version number of a specific object in the currently selected database. The GetVersion methods of a data dictionary plugin is the means. These methods are called when a field, table, or join is retrieved from the indexer of the appropriate collection. If the object should be hidden because of versioning issues, the indexer returns null, acting as if the object doesn't exist.
+If you use [versioning]({% link _docs/studio/datadictionary/versioning.md %}) in your data dictionary, you need a way to determine the version number of a specific object in the currently selected database. The GetVersion methods of a data dictionary plugin is the means. These methods are called when a field, table, or join is retrieved from the indexer of the appropriate collection. If the object should be hidden because of versioning issues, the indexer returns null, acting as if the object doesn't exist.
 
 ## Syntax
 ```csharp

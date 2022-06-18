@@ -5,7 +5,7 @@ nav_order: 13
 parent: How To
 ---
 
-Horizon Reports has a rich API that makes it easy to run and even create reports programmatically from other applications. A [sample project](vfps://Topic/_41X10E979) in the Samples folder, ReportCreation, shows how to do this. ReportCreation is a C# console project that programmatically creates a report and outputs it to Microsoft Excel. 
+Horizon Reports has a rich API that makes it easy to run and even create reports programmatically from other applications. A [sample project]({% link _docs/studio/samples.md %}) in the Samples folder, ReportCreation, shows how to do this. ReportCreation is a C# console project that programmatically creates a report and outputs it to Microsoft Excel. 
 
 To use Horizon Reports from your .NET 6 Application, add the HorizonReports.Api Nuget package to your project.
 
@@ -58,11 +58,11 @@ There are several parameters you can pass to the Application object when you ins
 
 * *datasource*: the name of the data source to connect to.
 
-* *password*: the password to use to automatically log a user in. As discussed in the [Using Horizon Reports from Other Web Applications](vfps://Topic/_4760O91DL) topic, it's better to use a token instead.
+* *password*: the password to use to automatically log a user in. As discussed in the [Using Horizon Reports from Other Web Applications]({% link _docs/how-to/usingfromotherwebapps.md %}) topic, it's better to use a token instead.
 
 * *project*: the path to the Project_Data\Settings.xml file containing project settings.
 
-* *username*: the user name to use to automatically log a user in. As discussed in the [Using Horizon Reports from Other Web Applications](vfps://Topic/_4760O91DL) topic, it's better to use a token instead.
+* *username*: the user name to use to automatically log a user in. As discussed in the [Using Horizon Reports from Other Web Applications]({% link _docs/how-to/usingfromotherwebapps.md %}) topic, it's better to use a token instead.
 
 ### Running a report
 The ExportToExcel method in the following code outputs the specified report to a Microsoft Excel spreadsheet. Note the "TODO" comment; you have to set the values of any ask-at-runtime filter conditions to appropriate values.

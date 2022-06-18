@@ -9,6 +9,6 @@ Although Horizon Reports can prompt the user for values of ask-at-runtime condit
 
 * For stored procedures called from the [Select]({% link _docs/plugins/virtualtable/select.md %}) method of a virtual table, use code in the GetParameters method to specify parameters the user is prompted for when a report using fields from the virtual table is run.
 
-* For a database function that needs to be passed a parameter from user input, use the built-in [GetParameter](vfps://Topic/_16W0VJB34) function as part of the function call to prompt the user for the value. For example, this would be the Expression of a calculated field that calls the MyFunction function, passing it the value entered by the user when prompted:
+* For a database function that needs to be passed a parameter from user input, use the built-in [GetParameter]({% link _docs/studio/function-reference.md %}) function as part of the function call to prompt the user for the value. For example, this would be the Expression of a calculated field that calls the MyFunction function, passing it the value entered by the user when prompted:
 
         dbo.MyFunction(GetParameter("SomeValue", "Enter Some Value", "String", "Default"))

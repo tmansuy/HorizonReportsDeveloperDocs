@@ -35,10 +35,10 @@ To create a subtable for a table, click the Add button (![](images\addbutton.png
 
 ![](IMAGES\SUBTABLE.PNG)
 
-In addition to the [usual properties](vfps://Topic/_0PR0RMH8X) for tables, subtables also have the following properties:
+In addition to the [usual properties]({% link _docs/studio/datadictionary/table-properties.md %}) for tables, subtables also have the following properties:
 
 * *Subtable of*: this is the name of the original table this subtable retrieves data from. You cannot change this property. 
 
 * *Filter*: enter an expression to be added to the WHERE clause to retrieve only certain records from the original table for the subtable. This expression must contain the alias of the subtable (for example, use Managers.IsManager = 1 rather than IsManager = 1).
 
-Horizon Reports Studio may automatically create subtables when it creates the metadata for a database; see the [Adding a Database to the Data Dictionary](vfps://Topic/_0OV0UB5HW) topic for details.
+Horizon Reports Studio may automatically create subtables when it creates the metadata for a database; see the [Adding a Database to the Data Dictionary]({% link _docs/studio/datadictionary/adding-a-database.md %}) topic for details.

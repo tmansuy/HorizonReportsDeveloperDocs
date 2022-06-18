@@ -31,6 +31,6 @@ To start the process, click the Add button (![](images\addbutton.png)) beside th
 
 * *Create virtual tables from stored procedures*: With this option on, Studio creates virtual tables for any stored procedures in the database. 
 
-* *Create subtables for self joined tables*: Turn this option on to automatically create a subtable any time any self-joined table or more than one relationship between the same set of tables is discovered. You can rename the subtable if you wish. See the [Creating a Subtable](vfps://Topic/_0VK0SX8IO) topic for information on subtables.
+* *Create subtables for self joined tables*: Turn this option on to automatically create a subtable any time any self-joined table or more than one relationship between the same set of tables is discovered. You can rename the subtable if you wish. See the [Creating a Subtable]({% link _docs/studio/datadictionary/table-properties.md %}) topic for information on subtables.
 
 Once you've filled in all the information in this dialog, click the *Add Database* button. Horizon Reports Studio then performs the discovery process and adds a new database entry to the data dictionary for the project.

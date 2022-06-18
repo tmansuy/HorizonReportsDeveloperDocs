@@ -9,19 +9,19 @@ Data dictionary properties and configuration settings can only take Horizon Repo
 
 * *Dynamically updating the data dictionary*. For example, your application may allow the user to change the caption for some fields. You probably want the user to see the same captions in the report writer; otherwise, the user might have trouble finding the field they want. In the AfterLoaded method of a data dictionary plugin, which is called just after Horizon Reports fills the data dictionary collection from the data dictionary database, you can change the caption (or any other property) of any field. You can even add or remove fields.
 
-* *Defining data sources*. If the [*Connection type*](vfps://Topic/_0PR0V3L9G) property of a database is set to *Scripted*, a plugin specifies the connection information for the database. You can define multiple data sources for a database if desired.
+* *Defining data sources*. If the [*Connection type*]({% link _docs/studio/datadictionary/database-properties.md %}) property of a database is set to *Scripted*, a plugin specifies the connection information for the database. You can define multiple data sources for a database if desired.
 
 * *Calling stored procedures*. For a variety of reasons (security, performance, or because the DBA says so), you may want to access the data in a table via a stored procedure rather than by a SQL statement. Since Horizon Reports doesn't know the name of the stored procedure to call or the parameters to pass to it, you have to put code in the [Select]({% link _docs/plugins/virtualtable/select.md %}) method of a plugin for the table.
 
-* *Calculated fields*. You may have a [calculated field](vfps://Topic/_0U10UENKF) for which a simple expression won't suffice. For example, suppose the commission for a sale is set to a sliding scale, so higher sales amounts receive a higher commission percentage. In this case, you may have to use a control structure such as a switch statement to determine the amount. The code for this goes into a function plugin called from the [Expression]({% link _docs/studio/datadictionary/field-properties.md %}) property of the field.
+* *Calculated fields*. You may have a [calculated field]({% link _docs/studio/datadictionary/creating-a-calc-field.md %}) for which a simple expression won't suffice. For example, suppose the commission for a sale is set to a sliding scale, so higher sales amounts receive a higher commission percentage. In this case, you may have to use a control structure such as a switch statement to determine the amount. The code for this goes into a function plugin called from the [Expression]({% link _docs/studio/datadictionary/field-properties.md %}) property of the field.
 
 There are several different types of plugins in Stonefield Query:
 
 * [Application]({% link _docs/plugins/application/index.md %}): these plugins are called from various places in the report writer. For example, after Horizon Reports has finished its startup task, the AfterSetup method of an application plugin is called.
 
-* [Data dictionary](vfps://Topic/_3QV0S4C5Y): these plugins are called during specific data dictionary events, such as after the collections have been loaded from the data dictionary database.
+* [Data dictionary]({% link _docs/plugins/datadictionary/index.md %}): these plugins are called during specific data dictionary events, such as after the collections have been loaded from the data dictionary database.
 
-* [Data engine](vfps://Topic/_0SK0XH4QO): these plugins are called from various places during data engine processing. For example, the GetDataSources method of such a plugin can programmatically define the data sources (physical connection information) for a database.
+* [Data engine]({% link _docs/plugins/dataengine/index.md %}): these plugins are called from various places during data engine processing. For example, the GetDataSources method of such a plugin can programmatically define the data sources (physical connection information) for a database.
 
 * [Functions]({% link _docs/plugins/functions.md %}): these simple plugins provide methods called from various places in Horizon Reports, such as the Expression or Caption properties of a field.
 
@@ -31,11 +31,11 @@ There are several different types of plugins in Stonefield Query:
 
 * [Value converter]({% link _docs/plugins/valueconverter/index.md %}): these plugins convert a value stored in a field into the value you want displayed to the user. For example, some applications store dates as numeric values, so January 13, 2013 is stored as 20130113. A value converter converts the numeric value to a date value for display in a report, and a date value used as a filter into a numeric value that can be used in the WHERE clause of a SQL statement.
 
-* [Values method](vfps://Topic/_3QW0STVGI): these plugins allow you to programmatically define how to display a list of distinct values for a field rather than having Horizon Reports issue a SELECT DISTINCT SQL statement when the user clicks the Values button.
+* [Values method]({% link _docs/plugins/valuesmethod/index.md %}): these plugins allow you to programmatically define how to display a list of distinct values for a field rather than having Horizon Reports issue a SELECT DISTINCT SQL statement when the user clicks the Values button.
 
-* [Virtual table](vfps://Topic/_3QV0SA9WN): these plugins return a DataTable to Horizon Reports when the user reports on a virtual table.
+* [Virtual table]({% link _docs/plugins/virtualtable/index.md %}): these plugins return a DataTable to Horizon Reports when the user reports on a virtual table.
 
-<%-- * [Web action](vfps://Topic/_4HB0YOSS0): these plugins support custom actions. The plugin's PerformAction method is called when its corresponding URL is navigated to, and the method is responsible for returning an appropriate HTTP response. %>
+<%-- * [Web action]({% link _docs/plugins/webaction/index.md %}): these plugins support custom actions. The plugin's PerformAction method is called when its corresponding URL is navigated to, and the method is responsible for returning an appropriate HTTP response. %>
 
 Horizon Reports supports any .NET language for a plugin, and targets .NET 6.  When creating a new plugin project, you should create a class library that targets net6.0.
 
@@ -51,7 +51,7 @@ A plugin is identified by Horizon Reports by the following:
 
 * It implements the appropriate Horizon Reports plugin interface and has an attribute providing metadata about the plugin. See the help topic for each plugin type for the interface and attribute to use.
 
-All plugin interfaces derived from a common one, [IBasePlugin](VFPS://Topic/_42110PV9P):
+All plugin interfaces derived from a common one, IBasePlugin:
 
 ```csharp
 using System;

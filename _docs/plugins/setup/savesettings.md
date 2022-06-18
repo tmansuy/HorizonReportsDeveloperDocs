@@ -16,7 +16,7 @@ public bool SaveSettings(Dictionary<string,
 
 ## Parameters
 *settings*
-A list of the settings to save. See [GetSettings](vfps://Topic/_1RY0VFTY0) for a description.
+A list of the settings to save. See [GetSettings]({% link _docs/plugins/setup/getsettings.md %}) for a description.
 
 > @icon-info-circle The dictionary has upper case keys, regardless of what case was originally used.
 

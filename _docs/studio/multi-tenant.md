@@ -11,9 +11,9 @@ Many web applications are multi-tenant, meaning a single instance of the softwar
 
 * All tenants share a database, but each table has a certain field containing an ID indicating which tenant the record belongs to. When the user adds a record, that field is filled in with the appropriate value for their tenant, and when they retrieve records, only records with that value in that field are retrieved.
 
-Horizon Reports supports multi-tenant environments if you set the [Support multi-tenant environment](vfps://Topic/_43A0WJ3C0) configuration setting to true. Here's how this is supported:
+Horizon Reports supports multi-tenant environments if you set the [Support multi-tenant environment]({% link _docs/studio/multi-tenant.md %}) configuration setting to true. Here's how this is supported:
 
-* For administrative users, the Security dialog has a Tenants tab in which you can manage tenants: the tenant name, which data source users in that tenant connect to (if the [Filter Field for Queries in Multi-Tenant](vfps://Topic/_43A0WJWWA) configuration setting is blank), and the ID value for the tenant (if that configuration setting isn't blank). Also, the Users and Roles tabs of the Security dialog have Tenant settings where you can assign a tenant to users and roles.
+* For administrative users, the Security dialog has a Tenants tab in which you can manage tenants: the tenant name, which data source users in that tenant connect to (if the [Filter Field for Queries in Multi-Tenant]({% link _docs/studio/configuration/configuration-settings.md %}) configuration setting is blank), and the ID value for the tenant (if that configuration setting isn't blank). Also, the Users and Roles tabs of the Security dialog have Tenant settings where you can assign a tenant to users and roles.
 
 * You can assign the Tenant Administrator role to a user. Users in this role have access to the Security dialog but they don't see the Tenants tab, the Users and Roles tabs only show users and roles for the tenant they're in, and any users and roles they add are automatically assigned to their tenant. This allows someone at the client to manage the users who can access the report writer.
 

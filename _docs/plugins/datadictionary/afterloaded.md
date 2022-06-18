@@ -8,13 +8,13 @@ grand_parent: Plugins
 
 The AfterLoaded method is intended to be used to customize the data dictionary at runtime. Why not just do this in Horizon Reports Studio? There may be many reasons:
 
-* Perhaps you don't want certain users to access certain tables. In that case, you want to set the Reportable property of the appropriate Table objects to false based on the user name. While you could use [role-based security](vfps://Topic/_1O80WKRRU) for this, doing it in the AfterLoaded method makes it more dynamic.
+* Perhaps you don't want certain users to access certain tables. In that case, you want to set the Reportable property of the appropriate Table objects to false based on the user name. While you could use [role-based security]({% link _docs/studio/security.md %}) for this, doing it in the AfterLoaded method makes it more dynamic.
 
 * If you allow your users to customize the caption for certain fields, or even add their own custom fields to the tables, you want the report writer to know about the changes the user made.
 
 * If users can purchase your application by module, you don't want those tables belonging to modules the user hasn't purchased listed in the report writer.
 
-This method is called immediately after Horizon Reports loads the collections from the data dictionary database. So, you have full access to the collections without altering the data dictionary database. Note that the data dictionary is loaded before any user logs in, so there's no selected data source yet. If your code needs to access the data source, such as to customize the data dictionary based on some data in the database, use the [AfterLogin](vfps://Topic/_43E0PH3F0) method of an application plugin instead.
+This method is called immediately after Horizon Reports loads the collections from the data dictionary database. So, you have full access to the collections without altering the data dictionary database. Note that the data dictionary is loaded before any user logs in, so there's no selected data source yet. If your code needs to access the data source, such as to customize the data dictionary based on some data in the database, use the [AfterLogin]({% link _docs/plugins/application/afterlogin.md %}) method of an application plugin instead.
 
 ## Syntax
 ```csharp

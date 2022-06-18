@@ -5,7 +5,7 @@ nav_order: 2
 parent: Horizon Reports Studio
 ---
 
-To create a version of Horizon Reports specific for an application's data, you must create a new reporting project. A project is a set of [configuration files](vfps://Topic/_0OY0RHHKC) that tell Horizon Reports how it works with the data of a particular application.
+To create a version of Horizon Reports specific for an application's data, you must create a new reporting project. A project is a set of configuration files that tell Horizon Reports how it works with the data of a particular application.
 
 The first time you start Horizon Reports, you'll automatically be prompted to create a project. To create additional projects beyond the first, you can click the *New* menu item in the Projects menu.
 
@@ -15,7 +15,7 @@ The new project dialog has the following options:
 
 * *Project name*: enter the name of the application as you want users to see it. Obviously, you can call it "Horizon Reports", but that's not a requirement; you can call it anything you wish, such as "My New Report Writer" or "Inventory Reporting System." The value you enter here corresponds with the [Application Name]({% link _docs/studio/configuration/configuration-settings.md %}) configuration setting.
 
-* *Short name*: this defaults to the name you enter for *Project name* but is used as an abbreviated name in various places. For example, if you set *Project name* to "The Northwind Company Reporting System," you may want to use a shorter name like "Northwind Reporting" for *Short name*. This setting is stored in the [Short Application Name](vfps://Topic/_1RV0RJ3Z1) configuration setting.
+* *Short name*: this defaults to the name you enter for *Project name* but is used as an abbreviated name in various places. For example, if you set *Project name* to "The Northwind Company Reporting System," you may want to use a shorter name like "Northwind Reporting" for *Short name*. This setting is stored in the [Short Application Name]({% link _docs/studio/configuration/configuration-settings.md %}) configuration setting.
 
 * *Name delimiters*: Specify which characters to use as delimiters around table and field names that need delimiters (for example, names with spaces in them). Specify a two-character value, with the first character being the left delimiter and the second being the right. Examples are "", meaning use double quotes, and [], meaning names are delimited with square brackets. MySQL needs the reverse apostrophe: ``
 
@@ -36,7 +36,7 @@ The new project dialog has the following options:
 
 * *Create virtual tables from stored procedures*: With this option on, Studio creates virtual tables for any stored procedures in the database. 
 
-* *Create subtables for self joined tables*: Turn this option on to automatically create a subtable any time any self-joined table or more than one relationship between the same set of tables is discovered. You can rename the subtable if you wish. See the [Creating a Subtable](vfps://Topic/_0VK0SX8IO) topic for information on subtables.
+* *Create subtables for self joined tables*: Turn this option on to automatically create a subtable any time any self-joined table or more than one relationship between the same set of tables is discovered. You can rename the subtable if you wish. See the [Creating a Subtable]({% link _docs/studio/datadictionary/table-properties.md %}) topic for information on subtables.
 
 Once you've filled in all the information in this dialog, click the *Create Project* button. 
 
