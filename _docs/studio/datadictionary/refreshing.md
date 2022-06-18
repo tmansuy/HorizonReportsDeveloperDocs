@@ -6,7 +6,7 @@ parent: Data Dictionary
 grand_parent: Horizon Reports Studio
 ---
 
-When the structure of a database changes, such as when a new table or field is added, the data dictionary must be updated or the user won't be able to report on the new fields (or worse, if a field was removed or renamed, they'll get an error when they select the old field for a report). To refresh the data dictionary, click the Refresh button (![](IMAGES\refresh.png)). In the Refresh settings dialog that appears, you have the following options:
+When the structure of a database changes, such as when a new table or field is added, the data dictionary must be updated or the user won't be able to report on the new fields (or worse, if a field was removed or renamed, they'll get an error when they select the old field for a report). To refresh the data dictionary, click the Refresh button (![](/assets/images/refresh.png)). In the Refresh settings dialog that appears, you have the following options:
 
 * *Include views*: Turn this setting on if you want views included in the discovery.
 

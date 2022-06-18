@@ -13,7 +13,7 @@ When you select a field in Studio, an editor displays the properties for that fi
 ## Main Page
 The Main page contains the main properties for a field. The following properties appear on this page:
 
-![](images\fieldprops1.png)
+![](/assets/images/fieldprops1.png)
 
 * *Name*: the name of the field. If the name contains characters other than letters, numbers, and underscores, or if it matches a SQL keyword, such as DESC or ORDER, Studio automatically adds delimiters around the name (the delimiters defined in the [database properties]({% link _docs/studio/datadictionary/database-properties.md %})). It also automatically adds delimiters if you turned on the *Add delimiters to all names* setting when adding or refreshing the database. 
 
@@ -179,7 +179,7 @@ This page is disabled if you've chosen any of the options on the Special page (d
 
 Which properties appear on the Calc page depends on whether the field is real or calculated. The following properties appear for calculated fields.
 
-![](IMAGES\FIELDPROPS5.PNG)
+![](/assets/images/FIELDPROPS5.PNG)
 
 * *Use value converter*: turn this on to allow the calculated field to use a value converter. See below for information on value converters.
 
@@ -191,7 +191,7 @@ Which properties appear on the Calc page depends on whether the field is real or
 
 The following properties appear for real fields.
 
-![](IMAGES\FIELDPROPS2.PNG)
+![](/assets/images/FIELDPROPS2.PNG)
 
 * *Value converter*: the values actually contained in the field may not be what the user expects to see. Using a value converter plugin allows you to convert the values stored to the values to display. For example, Sage 300 ERP, an accounting application, stores dates as numeric values; January 10, 2013 is stored as 20130110. The end-user expects to see the date as 01/10/2013 (or however their Windows system is configured to display dates). The built-in NumericToDateValueConverter converts a numeric value to the corresponding date value. Other built-in converters are:
 
@@ -226,7 +226,7 @@ The following properties appear for real fields.
 ## Special Page
 The Special page is used for settings about related fields.
 
-![](IMAGES\FIELDPROPS3.PNG)
+![](/assets/images/FIELDPROPS3.PNG)
 
 There are two ways you can display a value from a related table: by setting *Appears in* or *Display field from related table*.
 
@@ -241,6 +241,6 @@ To specify that a field from a related table is displayed in place of this field
 
 ## Comments Page
 
-![](IMAGES\FIELDPROPS4.PNG)
+![](/assets/images/FIELDPROPS4.PNG)
 
 If you want comments about a field available to your user, such as a detailed description of the purpose or contents of a field, enter them on the Comment page.

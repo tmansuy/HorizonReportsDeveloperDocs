@@ -8,7 +8,7 @@ grand_parent: Horizon Reports Studio
 
 Your [plugins]({% link _docs/plugins/index.md %}) may need additional settings that can be configured for the user. Custom settings also may be needed as parameters for reports. To define these settings, use the Custom Setting tab in the Configuration section of Studio.
 
-To create a custom setting, click the Add button (![](images\addbutton.png)).
+To create a custom setting, click the Add button (![](/assets/images/addbutton.png)).
 
 ![](/assets/images/customsettings.png)
 

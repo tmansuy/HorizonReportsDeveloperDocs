@@ -7,7 +7,7 @@ parent: Horizon Reports Studio
 
 Horizon Reports Studio consists of a toolbar and editor section. 
 
-![](IMAGES\hrstudio.png)
+![](/assets/images/hrstudio.png)
 
 The Project menu has functions for [creating a new project]({% link _docs/studio/creating-a-project.md %}), [importing a project]({% link _docs/studio/importing-a-project.md %}), or [managing existing projects]({% link _docs/studio/managing-projects.md %}). Additional buttons on the toolbar allow access to various project editors, including:
 

@@ -21,7 +21,7 @@ Horizon Reports provides the ability to define aliases for tables by defining a 
 
 * *Filtering*: sometimes, a table may be overloaded. That is, it contains records of more than one type, distinguished in some way (such as a TYPE column). An example of this is a lookup table, used to store descriptive names for all types of entities. For example, imagine the following data design:
 
-    ![](images\subtableexample.gif)
+    ![](/assets/images/subtableexample.gif)
 
     The Customers table has a foreign key called CustomerType that contains the ID value for a record in Lookups representing the customer type, and another foreign key called LeadSource that contains the ID value for a record in Lookups representing how they became a customer. Thus, Lookups contains two different types of records: customer types and lead sources. The RecType column in Lookups contains a "C" for customer type records and "L" for lead source records.
 
@@ -31,9 +31,9 @@ Horizon Reports provides the ability to define aliases for tables by defining a 
 
 Subtables aren't just useful for multiple relationships between a pair of tables; they can also be used for self-joins. For example, you may have an Employees table that includes a ManagerID field which contains the ID for another employee record representing the employee's manager. In this case, create a subtable of Employees called Managers and define a relationship between them matching the ManagerID field from Employees with the ID field from Managers. You may also want only certain fields in Managers to be available, such as their name, since salary, department, and other fields can be obtained from the appropriate Employees record. You may also set a Filter for Managers, something like Managers.IsManager = 1.
 
-To create a subtable for a table, click the Add button (![](images\addbutton.png)) beside the Tables node in the TreeView. A dialog will appear where you can specify the type of new table (choose subtable). Enter the desired name for the subtable and the table to use as a base. Studio creates a copy of the table and all of its fields and relations.
+To create a subtable for a table, click the Add button (![](/assets/images/addbutton.png)) beside the Tables node in the TreeView. A dialog will appear where you can specify the type of new table (choose subtable). Enter the desired name for the subtable and the table to use as a base. Studio creates a copy of the table and all of its fields and relations.
 
-![](IMAGES\SUBTABLE.PNG)
+![](/assets/images/SUBTABLE.PNG)
 
 In addition to the [usual properties]({% link _docs/studio/datadictionary/table-properties.md %}) for tables, subtables also have the following properties:
 

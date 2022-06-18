@@ -15,7 +15,7 @@ If a report contains only fields from OESHDT and ICITEM, the correct path is OES
 
 The join weight property of a relationship can help you choose the optimum path, but since that's only used for a specific relationship, it can be complicated getting the correct set of join weights to give the desired path under all conditions. That's where join trees help: a join tree allows you to define exactly what set of relationships the report writer should use to get from one table to another.
 
-To create a join tree, choose the *Join Trees* button on the toolbar, then click the Add button (![](images\addbutton.png)).
+To create a join tree, choose the *Join Trees* button on the toolbar, then click the Add button (![](/assets/images/addbutton.png)).
 
 ![](/assets/images/jointree.png)
 

@@ -14,7 +14,7 @@ Some applications have more than one database. This is especially true if you wa
 
 The properties displayed are:
 
-![](images\databaseprops.png)
+![](/assets/images/databaseprops.png)
 
 * *Name*: the name of the database. Note that this is the logical name of the database, not the physical name. You cannot edit the name.
 

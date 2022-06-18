@@ -16,7 +16,7 @@ There are three types of tables:
 
 When you select a table in Studio, an editor displays the properties for that table:
 
-![](images\tableprops.png)
+![](/assets/images/tableprops.png)
 
 * *Name*: the name of the table. If the name contains characters other than letters, numbers, and underscores, or if it matches a SQL keyword, such as DESC or ORDER, Studio automatically adds delimiters around the name (the delimiters defined in the [database properties]({% link _docs/studio/datadictionary/database-properties.md %})). It also automatically adds delimiters if you turned on the *Add delimiters to all names* setting when adding or refreshing the database. You can also manually add delimiters if necessary.
 

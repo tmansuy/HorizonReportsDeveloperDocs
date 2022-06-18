@@ -45,4 +45,4 @@ The built-in resources you can change the default access to are:
 
 You can also add new resources to appear in the report writer Security dialog. New user access resources won't affect the report writer, but allow you to control access to features from plugins.
 
-To add a new user access resource, click the Add button (![](images\addbutton.png)).
+To add a new user access resource, click the Add button (![](/assets/images/addbutton.png)).

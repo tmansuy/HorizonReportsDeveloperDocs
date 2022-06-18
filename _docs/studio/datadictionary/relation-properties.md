@@ -12,7 +12,7 @@ Although SQL doesn't have the concept of one-to-many or child-parent relations, 
 
 The properties displayed are:
 
-![](IMAGES\RELATIONPROPS.PNG)
+![](/assets/images/RELATIONPROPS.PNG)
 
 * *Many ("Child") table*: select which table is on the "many" side of the relationship from the drop-down list of tables. 
 
@@ -29,7 +29,7 @@ A join can be defined as a list of field pairs, or as a SQL expression (complex 
 
 * *Join weight*: some applications, such as accounting systems, have large numbers of tables and complex relationships between them. As a result, there may be more than one "path" from one table to another, indirectly related, table. Consider the relationships shown below. There are two ways to get from Table A to Table D. However, if the preferred path is through Table B, you can tell the report writer that by setting the join weight for the relationship between Table C and Table D to a higher value (the lower the value, the more important the join).
 
-    ![](IMAGES\RELATIONTREE.GIF)
+    ![](/assets/images/RELATIONTREE.GIF)
 
 * *How to filter unfavored table*: in SQL, when you specify an outer join between tables, you're indicating that you want all records from the favored table whether there are matches in the unfavored table or not. If you add a filter condition on the unfavored table, SQL treats it like an inner join: now you only get records from the favored table that have matches in the unfavored table. Because that behavior is unexpected, the default is to move the filter condition to the JOIN clause so the unfavored table is filtered but unmatched records in the favored table are still included. However, there are times when the user doesn't want that behavior; they want unmatched records eliminated even though it's an outer join. So, you now have a choice about what to do with a filter conditions on the unfavored table:
 

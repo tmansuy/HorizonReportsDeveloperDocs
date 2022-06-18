@@ -8,9 +8,9 @@ grand_parent: Horizon Reports Studio
 
 Filling in the data dictionary for a database would be a very tedious process if you had to do it by hand. Fortunately, Horizon Reports Studio has a feature to "discover" the metadata for a database. You do this by adding a database to the current project's data dictionary.
 
-To start the process, click the Add button (![](images\addbutton.png)) beside the Databases node in the TreeView. The Add Database dialog appears.
+To start the process, click the Add button (![](/assets/images/addbutton.png)) beside the Databases node in the TreeView. The Add Database dialog appears.
 
-![](images\adddatabase.png)
+![](/assets/images/adddatabase.png)
 
 * *Name delimiters*: Specify which characters to use as delimiters around table and field names that need delimiters (for example, names with spaces in them). Specify a two-character value, with the first character being the left delimiter and the second being the right. Examples are "", meaning use double quotes, and [], meaning names are delimited with square brackets. MySQL needs the reverse apostrophe: ``
 
