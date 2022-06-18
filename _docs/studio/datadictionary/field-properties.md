@@ -179,7 +179,7 @@ This page is disabled if you've chosen any of the options on the Special page (d
 
 Which properties appear on the Calc page depends on whether the field is real or calculated. The following properties appear for calculated fields.
 
-![](/assets/images/FIELDPROPS5.PNG)
+![](/assets/images/fieldprops5.png
 
 * *Use value converter*: turn this on to allow the calculated field to use a value converter. See below for information on value converters.
 
@@ -191,7 +191,7 @@ Which properties appear on the Calc page depends on whether the field is real or
 
 The following properties appear for real fields.
 
-![](/assets/images/FIELDPROPS2.PNG)
+![](/assets/images/fieldprops2.png)
 
 * *Value converter*: the values actually contained in the field may not be what the user expects to see. Using a value converter plugin allows you to convert the values stored to the values to display. For example, Sage 300 ERP, an accounting application, stores dates as numeric values; January 10, 2013 is stored as 20130110. The end-user expects to see the date as 01/10/2013 (or however their Windows system is configured to display dates). The built-in NumericToDateValueConverter converts a numeric value to the corresponding date value. Other built-in converters are:
 
@@ -226,7 +226,7 @@ The following properties appear for real fields.
 ## Special Page
 The Special page is used for settings about related fields.
 
-![](/assets/images/FIELDPROPS3.PNG)
+![](/assets/images/fieldprops3.png)
 
 There are two ways you can display a value from a related table: by setting *Appears in* or *Display field from related table*.
 
@@ -241,6 +241,6 @@ To specify that a field from a related table is displayed in place of this field
 
 ## Comments Page
 
-![](/assets/images/FIELDPROPS4.PNG)
+![](/assets/images/fieldprops4.png)
 
 If you want comments about a field available to your user, such as a detailed description of the purpose or contents of a field, enter them on the Comment page.
