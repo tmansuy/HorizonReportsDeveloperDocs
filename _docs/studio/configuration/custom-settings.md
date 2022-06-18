@@ -10,7 +10,7 @@ Your [plugins]({% link _docs/plugins/index.md %}) may need additional settings t
 
 To create a custom setting, click the Add button (![](images\addbutton.png)).
 
-![](/assets/images/CUSTOMSETTINGS.PNG)
+![](/assets/images/customsettings.png)
 
 A custom setting has the following properties:
 

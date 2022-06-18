@@ -20,7 +20,7 @@ Open IIS Manager. In the Connections panel on the left, expand the entry for you
 
 In the Actions panel on the right, click *Add Application Pool...*.
 
-![](/assets/images/ADDAPPLICATIONPOOL.PNG)
+![](/assets/images/addapplicationpool.png)
 
 Give the application pool a name you can easily associate with your reporting application. For *.NET CLR version*, choose *No Managed Code*. *Managed pipeline mode* must be set to *Integrated*. When you're finished, click OK and you'll see the application pool listed along with the other applications pools.
 
