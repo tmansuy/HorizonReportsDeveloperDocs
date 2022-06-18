@@ -60,7 +60,7 @@ Note that the email credentials used to send the email come from the "Demo Email
 
 * *Logo Image File*: The setting is the name of an image file displayed in the Login page of Horizon Reports. Leave this blank to display the Horizon Reports logo, or specify the name of an image file (GIF, JPG, or BMP) to use instead. Although the path for the file is shown as fully qualified, it's actually stored as a relative path from the project directory to prevent file location problems.
 
-* *Icon File*: If you want to use your own icon rather than the Horizon Reports icon (![](/assets/images/favicon.png)), specify the name of an ICO file for the Icon File property. For the web version, this is used as the icon in the browser.
+* *Icon File*: If you want to use your own icon rather than the Horizon Reports icon (![](/assets/images/favicon.ico)), specify the name of an ICO file for the Icon File property. For the web version, this is used as the icon in the browser.
 
 ## Data Settings
 
