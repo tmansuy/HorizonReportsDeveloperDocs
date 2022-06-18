@@ -8,7 +8,7 @@ grand_parent: Deploying Horizon Reports
 
 Horizon Reports can be run using SSL (Secure Sockets Layer). This is a good idea, because user name and passwords are sent from the browser to the server and SSL ensures this is done securely (not that it's an issue on your own machine but it is when you deploy to a production web server). The internet server requires a trusted certificate in order to access a web site using SSL. Without one (there isn't one by default), you'll get something like this when you launch:
 
-![](/assets/images/certerror.png)
+![](/assets/images/certissue.png)
 
 You can click the Proceed Anyway button to continue, but it's a pain to have to do that every time. To install a certificate, do the following:<!-- Taken from http://blogs.msdn.com/b/robert_mcmurray/archive/2013/11/15/how-to-trust-the-iis-express-self-signed-certificate.aspx -->
 
