@@ -31,9 +31,9 @@ Horizon Reports provides the ability to define aliases for tables by defining a 
 
 Subtables aren't just useful for multiple relationships between a pair of tables; they can also be used for self-joins. For example, you may have an Employees table that includes a ManagerID field which contains the ID for another employee record representing the employee's manager. In this case, create a subtable of Employees called Managers and define a relationship between them matching the ManagerID field from Employees with the ID field from Managers. You may also want only certain fields in Managers to be available, such as their name, since salary, department, and other fields can be obtained from the appropriate Employees record. You may also set a Filter for Managers, something like Managers.IsManager = 1.
 
-To create a subtable for a table, click the Add button (![](/assets/images/addbutton.png)) beside the Tables node in the TreeView. A dialog will appear where you can specify the type of new table (choose subtable). Enter the desired name for the subtable and the table to use as a base. Studio creates a copy of the table and all of its fields and relations.
+To create a subtable for a table, first navigate to the properties for the table. There, use the *Clone as Subtable* button to create the subtable. Next, you are prompted to enter the desired name for the subtable. Studio then creates a copy of the table and all of its fields and relations.
 
-![](/assets/images/SUBTABLE.PNG)
+![](/assets/images/subtable.png)
 
 In addition to the [usual properties]({% link _docs/studio/datadictionary/table-properties.md %}) for tables, subtables also have the following properties:
 
