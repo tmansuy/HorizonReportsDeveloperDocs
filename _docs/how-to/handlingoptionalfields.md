@@ -23,7 +23,7 @@ private static Dictionary<string, Dictionary<string, string>>
     new Dictionary<string, Dictionary<string, string>>();
 
 /// <summary>
-/// A reference to the Stonefield Query application object.
+/// A reference to the application object.
 /// </summary>
 [Import]
 public static IHorizonReportsAppService Application;

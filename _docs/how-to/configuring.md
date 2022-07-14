@@ -5,15 +5,17 @@ nav_order: 3
 parent: How To
 ---
 
+# options.json
+
 You can configure the following options in an **options.json** file in the root of the web application folder:
 
-- *schedulerconnectionstring*: A connection string for a SQL Server database to use for the scheduler. Only specify this if running Stonefield Query Enterprise in [Clustered Mode]({% link _docs/deploying/configuring-iis/clustered.md %})
+- *schedulerconnectionstring*: A connection string for a SQL Server database to use for the scheduler. Only specify this if running Horizon Reports in [Clustered Mode]({% link _docs/deploying/configuring-iis/clustered.md %})
 ```json
 {
     "schedulerconnectionstring": "Data Source=dbserver;Initial Catalog=SQSchedules;uid=sa;pwd=sapassword"
 }
 ```
-- *cacheconnectionstring*: A connection string for a SQL Server database to use as system cache. Only specify this if running Stonefield Query Enterprise in [Clustered Mode]({% link _docs/deploying/configuring-iis/clustered.md %})
+- *cacheconnectionstring*: A connection string for a SQL Server database to use as system cache. Only specify this if running Horizon Reports in [Clustered Mode]({% link _docs/deploying/configuring-iis/clustered.md %})
 ```json
 {
     "cacheconnectionstring": "Data Source=dbserver;Initial Catalog=SQDistCache;uid=sa;pwd=sapassword"
@@ -27,7 +29,7 @@ You can configure the following options in an **options.json** file in the root 
 ```
 
 
-## Options.json example
+## options.json example
 Here is an example of an options.json file with all configuration options specified
 
 ```json
@@ -39,6 +41,8 @@ Here is an example of an options.json file with all configuration options specif
     "appsettings": "C:\\MyProjects\\Northwind\\App_Data\\applicationsettings.xml"
 }
 ```
+
+# hrsettings.json
 
 You can configure the following options in an **hrsettings.json** file in the root of the web application folder:
 

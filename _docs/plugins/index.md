@@ -15,7 +15,7 @@ Data dictionary properties and configuration settings can only take Horizon Repo
 
 * *Calculated fields*. You may have a [calculated field]({% link _docs/studio/datadictionary/creating-a-calc-field.md %}) for which a simple expression won't suffice. For example, suppose the commission for a sale is set to a sliding scale, so higher sales amounts receive a higher commission percentage. In this case, you may have to use a control structure such as a switch statement to determine the amount. The code for this goes into a function plugin called from the [Expression]({% link _docs/studio/datadictionary/field-properties.md %}) property of the field.
 
-There are several different types of plugins in Stonefield Query:
+There are several different types of plugins in Horizon Reports:
 
 * [Application]({% link _docs/plugins/application/index.md %}): these plugins are called from various places in the report writer. For example, after Horizon Reports has finished its startup task, the AfterSetup method of an application plugin is called.
 

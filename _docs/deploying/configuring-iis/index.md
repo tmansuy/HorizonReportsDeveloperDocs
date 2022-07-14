@@ -29,7 +29,7 @@ Give the application pool a name you can easily associate with your reporting ap
 There are a number of advanced settings that can be modified for an application pool to change how it behaves. If you plan to use the Scheduler, one change to the default settings is [required]({% link _docs/deploying/configuring-iis/app-pool-settings.md %}). To access advanced settings, select the application pool in the list and in the Actions pane, click *Advanced Settings...*.
 
 ## Deploying project files
-Publish your project as discussed in the [Publishing Stonefield Query]({% link _docs/deploying/publishing.md %}) help topic. You can choose to publish to an FTP location or to a folder on the machine. If you aren't publishing on the web server, transfer the contents of the "published to" folder to the web server. A common practice is to create a subdirectory in C:\inetpub for each web application.
+Publish your project as discussed in the [Publishing]({% link _docs/deploying/publishing.md %}) help topic. You can choose to publish to an FTP location or to a folder on the machine. If you aren't publishing on the web server, transfer the contents of the "published to" folder to the web server. A common practice is to create a subdirectory in C:\inetpub for each web application.
 
 ![](/assets/images/projectfilesdeployed.png)
 

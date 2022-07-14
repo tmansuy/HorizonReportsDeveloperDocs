@@ -34,7 +34,6 @@ using System;
 using HorizonReports;
 using HorizonReports.Plugins;
 using System.IO;
-using Stonefield.Library;
 using Microsoft.Win32;
 using System.ComponentModel.Composition;
 using System.Net;
@@ -98,7 +97,7 @@ namespace SamplePlugins
         }
 &nbsp;
         /// <summary>
-        /// Fired when Stonefield Query shuts down.
+        /// Fired when Horizon Reports shuts down.
         /// </summary>
         public void OnShutdown()
         {

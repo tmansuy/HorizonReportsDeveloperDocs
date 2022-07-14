@@ -11,9 +11,9 @@ Horizon Reports supports using an external identity provider for single sign-on 
 
 To enable external authentication using Active Directory Federation Services, you need to specify the *ADFS Metadata address* and the *ADFS Realm*.
 
-* *ADFS Metadata address*: A URL that points to the active directory instance to perform the authentication. For example, for the Stonefield domain: https://stonefield.local/FederationMetadata/2007-06/FederationMetadata.xml
+* *ADFS Metadata address*: A URL that points to the active directory instance to perform the authentication. For example, for the Horizon Reports domain: https://horizon-reports.local/FederationMetadata/2007-06/FederationMetadata.xml
 
-* *ADFS Realm*: For the realm address, use the WS-Federation Passive protocol URL that was entered when configuring ADFS. This is usually the URL for Stonefield Query.
+* *ADFS Realm*: For the realm address, use the WS-Federation Passive protocol URL that was entered when configuring ADFS.
 
 # OpenID Connect
 

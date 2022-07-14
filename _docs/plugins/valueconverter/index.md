@@ -80,7 +80,7 @@ namespace HorizonReports.Plugins
         Dictionary<Field, string> AliasList { get; set; }
 
         /// <summary>
-        /// The name of the data source Stonefield Query is currently
+        /// The name of the data source Horizon Reports is currently
         /// connected to. This is useful for cases where the converter
         /// needs to call back in to the data engine to retrieve data.
         /// </summary>

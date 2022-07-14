@@ -142,7 +142,7 @@ The Main page contains the main properties for a field. The following properties
 
     The function must accept a single parameter of type object and do any necessary conversion. Here's what the GetHHMM function that converts the number of minutes into HH:MM looks like:
 
-    <pre>  [StonefieldQueryFormatter("HH:MM", typeof(Int16))]
+    <pre>  [Formatter("HH:MM", typeof(Int16))]
     public static string GetHHMM(object minutes)
     {
        TimeSpan span = TimeSpan.FromMinutes(Convert.ToInt32(minutes));
@@ -187,7 +187,7 @@ Which properties appear on the Calc page depends on whether the field is real or
 	
 * *Expression*: the formula used to display the value in the field to the user. This can be an expression your database engine understands or a call to a [plugin]({% link _docs/plugins/index.md %}) function. Fields should be aliased; that is, include the name of the table, such as "Customers.Company". If either the table or field name contains illegal SQL characters (such as spaces) or match SQL keywords, place delimiters (the ones defined in the [database properties]({% link _docs/studio/datadictionary/database-properties.md %})) around the table or field name. For example, the UnitPrice field in the Order Details table should be entered with delimiters around the table name: [Order Details].UnitPrice.
 
-* *Fields involved*: a calculated field may derive its value from one or more real fields. For example, the extended price of an invoice item is calculated as the product of the unit price and the quantity. In order to perform the calculation, Horizon Reports needs to know which real fields to retrieve from the database. When you enter the Expression, Stonefield Query Studio automatically parses it and places any field names it finds in this property. However, if you call a plugin function that does additional data access or use an expression such that the list of fields involved is incorrect, you need to enter the fields involved in the expression in this property. The field names should be fully aliased (that is, include the name of the table) and separated with commas. As with *Expression*, place delimiters around table or field names that contain illegal SQL characters (such as spaces) or SQL keywords.
+* *Fields involved*: a calculated field may derive its value from one or more real fields. For example, the extended price of an invoice item is calculated as the product of the unit price and the quantity. In order to perform the calculation, Horizon Reports needs to know which real fields to retrieve from the database. When you enter the Expression, Studio automatically parses it and places any field names it finds in this property. However, if you call a plugin function that does additional data access or use an expression such that the list of fields involved is incorrect, you need to enter the fields involved in the expression in this property. The field names should be fully aliased (that is, include the name of the table) and separated with commas. As with *Expression*, place delimiters around table or field names that contain illegal SQL characters (such as spaces) or SQL keywords.
 
 The following properties appear for real fields.
 

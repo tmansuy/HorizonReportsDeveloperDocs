@@ -158,7 +158,7 @@ private static IReport CreateReport()
    contactField.Heading = "Contact";
    contactField.Field = _app.DataDictionary.Fields["Customers.ContactName"];
    contactField.HorizontalAlignment =
-        Stonefield.Query.ReportEngine.TextAlignment.Right;
+        ReportEngine.TextAlignment.Right;
    report.Fields.Add(contactField);
 &nbsp;
    // Add ContactTitle below ContactName.
@@ -179,7 +179,7 @@ private static IReport CreateReport()
    filtCondition.Values.Add("Germany");
    filtCondition = report.FilterConditions.New(
         _app.DataDictionary.Fields["Customers.ContactTitle"]);
-   filtCondition.Connection = new Stonefield.Query.Filtering.AndConnection();
+   filtCondition.Connection = new Filtering.AndConnection();
    filtCondition.Values.Add("Sales Representative");
 &nbsp;
    return report;
