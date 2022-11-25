@@ -5,34 +5,54 @@ nav_order: 2
 parent: Home
 ---
 
-# Version 1.0
+# Version 1.1
 
-* Stonefield Query Enterprise is now called Horizon Reports. The functionality that was previously located in the separate Stonefield Query Studio tool is now part of the [web application]({% link _docs/studio/index.md %}). As a result, Horizon Reports only has one installer that can be used for both development and production environments.
+* You can now customize the name of the [cookie]({% link _docs/how-to/configuring.md %}) that Horizon Reports sends to the browser.
 
-* Horizon Reports now uses .NET 6. This means that [plugins]({% link _docs/plugins/index.md %}) will need to be recompiled in order to work with this release. Make sure to update the references in your plugin code from Stonefield/Stonefield.Query to HorizonReports.
+* When [refreshing the data dictionary]({% link _docs/studio/datadictionary/refreshing.md %}), you can now choose specific tables to refresh from a list. 
 
-* The Horizon Reports API is now available as a [Nuget package](https://www.nuget.org/packages/HorizonReports.Api). When [updating plugins]({% link _docs/plugins/migrating.md %}), remove old references to Stonefield Query assemblies and add a reference to HorizonReports.Api on nuget instead.
+* The database tree view will now scroll to the previously selected item after a change.
 
-* Horizon Reports now uses entity framework to store the project and data dictionary settings, and supports SQLite, SQL Server, or MySQL/MariaDB. The first time you launch the new version, you'll be prompted to enter the connection information for a new database. Afterwards, you can edit the [hrsettings.json]({% link _docs/how-to/configuring.md %}) file to make changes to the connection settings. If there's already a previous Stonefield Query Enterprise project in place, it will be [imported]({% link _docs/studio/importing-a-project.md %}) automatically.
+* If you launch Horizon Reports with no project created, you are now automatically prompted to create a new project.
 
-* Horizon Reports now uses the NLog logging package instead of log4net to generate [application logs]({% link _docs/how-to/diagnostics.md %}). If you previously used a custom logging provider file with log4net, please contact support for assistance. 
+* You can now highlight items in the database tree view by last updated date or keyword search.
 
-* Creating a log support package now includes archived logs as well.
+* Added Format presets for different data types.
 
-* When using the MariaDB [ODBC driver]({% link _docs/studio/datadictionary/adding-a-database.md %}), MySQL specific connection settings are now used.
+* In Studio, you can now right-click on a table and choose "View Table Contents" to retrieve and view the table.
 
-* You can now bypass [external authentication]({% link _docs/how-to/externalidentproviders.md %}) by passing a username and password as URL parameters. You could use this to log in with an Administrator account if necessary. 
+* Added a connection string builder to Studio to help creating database connection strings.
+
+* You can now test joins with a new Test button.
+
+* The BeforeExportReport plugin method now supports changes to the export options for the report. 
+
+* Moved the default location for hrsettings.json file to Project_Data. This allows setting the file permissions for the application root folder to read-only. Previous installations that have hrsettings.json in the application root will still continue to work normally. 
+
+* Added support for string concat (||) operator when reporting against a data source that requires it (like SQLite).
+
+* Added new URL for directly exporting a report to file. 
 
 ## Bug Fixes
 
-* Fixed an issue that caused usage tracking to not work if you used a provider other than SQLite for your project.
+* Fixed a bug where the Studio app wouldn't work properly when hosted from a virtual directory.
 
-* Problems with plugins or function assemblies should no longer prevent the application from starting.
+* Fixed a bug with custom favicon and logo handling. 
 
-* Studio now ignores stored procedures that don't have an assigned schema.
+* Fixed an issue using a MySql backend to host the data dictionary database. 
 
-* Fixed handling of currency types during data dictionary discovery.
+* Fixed an issue with views not being handled properly during a refresh.
 
-* If you have a custom output plugin, the file name passed to "PerformOutput" will now contain a timestamp if the user turned that option on.
+* Last changed time for meta data objects is now updated properly on changes.
 
-* Fixed a bug with OpenIDConnect not using the correct response type. 
+* Deleting a table from the data dictionary now automatically removes any related joins.
+
+* Fixed a bug where the field order wasn't being set properly for new fields.
+
+* Fixed a bug with automatic plugin compilation using the wrong .NET assemblies.
+
+* Fixed several issues that occurred when importing legacy projects. 
+
+* Fixed a bug with imported projects not having the correct project ID.
+
+* Fixed an issue where an expired license caused the application to stop working.

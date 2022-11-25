@@ -27,6 +27,12 @@ You can configure the following options in an **options.json** file in the root 
     "logintimeout": 20
 }
 ```
+- *cookiename*: The name the cookie sends to the browser. Set this value if you need to change the name of the cookie that Horizon Reports sends to the browser.
+```json
+{
+    "cookiename": "ReportingCookie"
+}
+```
 
 
 ## options.json example
@@ -38,7 +44,8 @@ Here is an example of an options.json file with all configuration options specif
     "schedulerconnectionstring": "Data Source=dbserver;Initial Catalog=SQSchedules;uid=sa;pwd=sapassword"
     "logintimeout": 5,
     "project": "C:\\MyProjects\\Northwind\\Project_Data\\settings.xml",
-    "appsettings": "C:\\MyProjects\\Northwind\\App_Data\\applicationsettings.xml"
+    "appsettings": "C:\\MyProjects\\Northwind\\App_Data\\applicationsettings.xml",
+	"cookie": "ReportingCookie"
 }
 ```
 

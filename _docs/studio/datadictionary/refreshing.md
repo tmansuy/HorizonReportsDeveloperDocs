@@ -16,6 +16,10 @@ When the structure of a database changes, such as when a new table or field is a
 
 * *Version*: the version number to assign to new tables and fields.
 
+* *Refresh All Tables*: Turn this option off if you want to choose which tables to refresh. 
+
 Clicking the *Refresh* button causes Studio to scan the data source and refresh the data dictionary as necessary, adding new tables and fields, changing data types and column widths, and so forth.
 
 If you have certain tables you want ignored when you refresh a database, turn on their *Do not refresh* property.
+
+![](/assets/images/refreshdialog.png)
