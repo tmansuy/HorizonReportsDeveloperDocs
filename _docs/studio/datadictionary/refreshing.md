@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Refreshing the Data Dictionary
-nav_order: 9
+nav_order: 10
 parent: Data Dictionary
 grand_parent: Horizon Reports Studio
 ---

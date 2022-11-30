@@ -21,7 +21,7 @@ The new project dialog has the following options:
 
 * *Add delimiters to all names*: Turn this setting on if you want delimiters added to all names. When off, Studio automatically adds delimiters to table and field names it thinks need them: names containing illegal characters such as spaces or names using keywords such as TABLE. 
 
-* *Connection string*: Enter the connection string for the application database you'd like to query against. Horizon Reports will use this connection to "discover" the metadata for a database, including all of its tables, fields, and relationships.
+* *Connection string*: Enter the connection string for the application database you'd like to query against. Horizon Reports will use this connection to "discover" the metadata for a database, including all of its tables, fields, and relationships. 
 
     For ODBC, the connection string is typically something like "driver=*ODBC driver name*;server=*server name*;database=*database name*;uid=*user name*;pwd=*password*."
 

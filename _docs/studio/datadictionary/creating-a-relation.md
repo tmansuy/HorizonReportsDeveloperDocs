@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Creating a Relation
-nav_order: 7
+nav_order: 8
 parent: Data Dictionary
 grand_parent: Horizon Reports Studio
 ---

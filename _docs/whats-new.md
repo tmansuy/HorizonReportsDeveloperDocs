@@ -11,27 +11,27 @@ parent: Home
 
 * When [refreshing the data dictionary]({% link _docs/studio/datadictionary/refreshing.md %}), you can now choose specific tables to refresh from a list. 
 
-* The database tree view will now scroll to the previously selected item after a change.
+* The [database tree view]({% link _docs/studio/datadictionary/database-properties.md %}) will now scroll to the previously selected item after a change.
 
-* If you launch Horizon Reports with no project created, you are now automatically prompted to create a new project.
+* If you launch Horizon Reports with no [project]({% link _docs/studio/creating-a-project.md %}) created, you are now automatically prompted to create a new project.
 
-* You can now highlight items in the database tree view by last updated date or keyword search.
+* You can now highlight items in the [database tree view]({% link _docs/studio/datadictionary/database-properties.md %}) by last updated date or keyword search.
 
-* Added Format presets for different data types.
+* Added [Format]({% link _docs/studio/datadictionary/field-properties.md %}) presets for different data types.
 
-* In Studio, you can now right-click on a table and choose "View Table Contents" to retrieve and view the table.
+* In Studio, you can now right-click on a table and choose [View Table Contents]({% link _docs/studio/datadictionary/view-table-contents.md %}) to retrieve and view the table.
 
-* Added a connection string builder to Studio to help creating database connection strings.
+* Added a [connection string builder]({% link _docs/studio/datadictionary/connection-string-builder.md %}) to Studio to help creating database connection strings.
 
-* You can now test joins with a new Test button.
+* You can now test [relations]({% link _docs/studio/datadictionary/relation-properties.md %}) with a new Test button.
 
-* The BeforeExportReport plugin method now supports changes to the export options for the report. 
+* The [BeforeExportReport]({% link _docs/plugins/reportengine/beforeexportreport.md %}) plugin method now supports changes to the export options for the report. 
 
-* Moved the default location for hrsettings.json file to Project_Data. This allows setting the file permissions for the application root folder to read-only. Previous installations that have hrsettings.json in the application root will still continue to work normally. 
+* Moved the default location for [hrsettings.json]({% link _docs/how-to/configuring.md %}) file to Project_Data. This allows setting the file permissions for the application root folder to read-only. Previous installations that have hrsettings.json in the application root will still continue to work normally. 
 
 * Added support for string concat (||) operator when reporting against a data source that requires it (like SQLite).
 
-* Added new URL for directly exporting a report to file. 
+* Added new URL for [directly exporting a report]({% link _docs/how-to/usingfromotherwebapps.md %}) to file. 
 
 ## Bug Fixes
 

@@ -63,6 +63,32 @@ For date values, use YYYY-MM-DD HH:MM:SS. For example:
     https://www.MyReports.com?username=admin&password=admin
     &reporttorun=146608a9-7af8-4810-b8be-88848ac795ae
       &8df41129-86be-4800-9a47-08495d6ec9e8=2014-1-1 00:00:00,2014-12-31 23:59:59
+	  
+## Exporting a report
+
+To export a report to file without displaying any UI dialog, use "ReportPreviewDirect/export" in the URL. The same options for specifying credentials and filter options when running a report directly are also used when exporting. By default, a *pdf* file will be generated, but you can specify the *filetype* parameter if a different output type is required.
+
+For example, to generate a csv file:
+
+    https://www.MyReports.com?username=admin&password=admin
+      &reporttorun=146608a9-7af8-4810-b8be-88848ac795ae
+      &filetype=csv
+
+The available file types are:
+
+* csv
+* html
+* bmp
+* gif
+* jpg
+* png
+* tiff
+* mht
+* pdf
+* rtf
+* text
+* xlsx
+* xlsxfullformat
 
 ## Displaying Horizon Reports in an IFrame
 If you use the report writer inside an IFrame, you can subscribe to a new "bootstrapperDone" event with addEventListener. This event fires when the page has finished loading, and can be used to execute actions in the parent appication. Here's an example that puts the report writer UI into an IFrame and hides it until it's finished loading:

@@ -51,7 +51,7 @@ Here is an example of an options.json file with all configuration options specif
 
 # hrsettings.json
 
-You can configure the following options in an **hrsettings.json** file in the root of the web application folder:
+You can configure the following options in an **hrsettings.json** file. The default location for this file is in the *Project_Data* folder. However, it's also supported in the root of the web application folder:
 
 - *DefaultConnectionString*: A connection string for a database that stores the projects for this installation. 
 ```json

@@ -43,7 +43,17 @@ The properties displayed are:
     * *User can manage connection string*: this allows you to define the connection string for the database at runtime (in the Setup Wizard) without having to create a plugin to set the connection string. The connection string is stored in the encrypted datasources.xml file in the App_Data folder. This file should not be deployed to the web server but is created there the first time Horizon Reports is run.
 
 
-* *Connection string*: this contains the connection string to use when refreshing the data dictionary in Studio or in the report writer when *Connection type* is set to *Use default connection*. To use a DSN, specify "dsn=*DSN name*." For ODBC, the connection string is typically something like "driver=*ODBC driver name*;server=*server name*;database=*database name*;uid=*user name*;pwd=*password*." For OLE DB, the connection string is typically something like "Provider=*OLE DB provider name*;Data Source=*server name*;Initial Catalog=*database name*;User ID=*user name*;Password=*password*." For SqlClient, the connection string is typically something like "Provider=System.Data.SqlClient;Server=*server name*;Database=*database name*;User ID=*user name*;Password=*password*." See <a href="http://www.connectionstrings.com" target="top">www.connectionstrings.com</a> for connection strings for different ODBC drivers and OLE DB providers.
+* *Connection string*: this contains the connection string to use when refreshing the data dictionary in Studio or in the report writer when *Connection type* is set to *Use default connection*. To use a DSN, specify "dsn=*DSN name*." 
+
+	For ODBC, the connection string is typically something like "driver=*ODBC driver name*;server=*server name*;database=*database name*;uid=*user name*;pwd=*password*." 
+	
+	For OLE DB, the connection string is typically something like "Provider=*OLE DB provider name*;Data Source=*server name*;Initial Catalog=*database name*;User ID=*user name*;Password=*password*." 
+	
+	For SqlClient, the connection string is typically something like "Provider=System.Data.SqlClient;Server=*server name*;Database=*database name*;User ID=*user name*;Password=*password*." 
+	
+	See <a href="http://www.connectionstrings.com" target="top">www.connectionstrings.com</a> for connection strings for different ODBC drivers and OLE DB providers.
+
+* *Build*: click this button to launch the [connection string builder]({% link _docs/studio/datadictionary/connection-string-builder.md %}).
 
 * *Test*: click this button to test the connection settings for the database.
 

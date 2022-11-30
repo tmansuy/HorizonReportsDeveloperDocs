@@ -33,4 +33,8 @@ To start the process, click the Add button (![](/assets/images/addbutton.png)) b
 
 * *Create subtables for self joined tables*: Turn this option on to automatically create a subtable any time any self-joined table or more than one relationship between the same set of tables is discovered. You can rename the subtable if you wish. See the [Creating a Subtable]({% link _docs/studio/datadictionary/table-properties.md %}) topic for information on subtables.
 
+* *Version*: the version number to assign to new tables and fields.
+
+* *Refresh All Tables*: Turn this option off if you want to choose which tables to add. 
+
 Once you've filled in all the information in this dialog, click the *Add Database* button. Horizon Reports Studio then performs the discovery process and adds a new database entry to the data dictionary for the project.
