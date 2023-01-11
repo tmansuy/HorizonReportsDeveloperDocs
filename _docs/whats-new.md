@@ -29,7 +29,7 @@ parent: Home
 
 * Moved the default location for [hrsettings.json]({% link _docs/how-to/configuring.md %}) file to Project_Data. This allows setting the file permissions for the application root folder to read-only. Previous installations that have hrsettings.json in the application root will still continue to work normally. 
 
-* Added support for string concat (||) operator when reporting against a data source that requires it (like SQLite).
+* Added support for string concat (\|\|) operator when reporting against a data source that requires it (like SQLite).
 
 * Added new URL for [directly exporting a report]({% link _docs/how-to/usingfromotherwebapps.md %}) to file. 
 
