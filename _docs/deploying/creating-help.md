@@ -44,8 +44,6 @@ The default help documentation uses a source repository and [GitHub Pages](https
 
 * *support_center*: Set to **true** to display the support center topic.
 
-* *support_center*: Set to **true** to display the knowledge base topic.
-
 * *company*: The company name to display in the documentation.
 
 * *description*: The description of the help repository.
@@ -55,7 +53,7 @@ The default help documentation uses a source repository and [GitHub Pages](https
 ## Further customizing help
 You may want to consider customizing the following:
 
-* Add any additional information desired to the Technical Support topic under.
+* Add any additional information desired to the Technical Support topic.
 
 * If you create a [Setup plugin]({% link _docs/plugins/setup/index.md %}), add a topic under the Configuration section describing any additional options you defined in the plugin.
 
