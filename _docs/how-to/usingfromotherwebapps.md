@@ -70,7 +70,7 @@ To export a report to file without displaying any UI dialog, use "ReportPreviewD
 
 For example, to generate a csv file:
 
-    https://www.MyReports.com?username=admin&password=admin
+    https://www.MyReports.com/ReportPreviewDirect/export?username=admin&password=admin
       &reporttorun=146608a9-7af8-4810-b8be-88848ac795ae
       &filetype=csv
 
