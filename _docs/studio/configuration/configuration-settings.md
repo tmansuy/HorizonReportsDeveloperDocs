@@ -131,6 +131,8 @@ In certain types of applications, such as an accounting system, you may want the
 
 * *Data Type of Tenant Filter Field*: This specifies the data type of the field specified in the *Filter field for queries in multi-tenant* setting.
 
+* *Disable Slide Toggles*: Set this to true to hide the slide toggle style checkboxes and display standard checkboxes instead.
+
 ## Auth Settings
 
 * *Log Off Redirect URL*: The report writer will normally redirect the user to the login page (external or internal) when a user logs off. However if you'd like to override this behavior and redirect to a different URL on log off, specify the URL you'd like to redirect to in this setting.

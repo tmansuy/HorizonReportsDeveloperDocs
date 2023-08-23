@@ -67,8 +67,6 @@ The Main page contains the main properties for a field. The following properties
     </tr>
     </table><br />
 
-    This control is disabled for real fields and enabled only for calculated fields.
-
 * *Content type*: this setting, which is only available for Byte[], Object, and String fields, allows you to specify the type of content for the field, which determines how it's rendered in a report. The choices are:
 
     * *Normal*: the contents of the field are displayed as is.

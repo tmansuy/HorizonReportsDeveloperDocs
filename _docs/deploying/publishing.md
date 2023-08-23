@@ -8,7 +8,7 @@ parent: Deploying Horizon Reports
 # Publishing a Project
 To deploy Horizon Reports on a web server, you need to deploy two things:
 
-- Horizon Reports web application: On the web server, download the [web application installer](https://www.horizon-reports.com/downloads/current/hrwebsetup.exe) and install. The application requires the [ASP.NET Core 6.0 Hosting Bundle](https://download.visualstudio.microsoft.com/download/pr/ae1014c7-a005-4a0e-9062-b6f3056ded09/da5d731f5ead9e385427a77412b88fb0/dotnet-hosting-6.0.5-win.exe), but the installer should automatically download and install this.
+- Horizon Reports web application: On the web server, download the [web application installer](https://www.horizon-reports.com/downloads/current/hrwebsetup.exe) and install. The application requires the [ASP.NET Core 6.0 Hosting Bundle](https://download.visualstudio.microsoft.com/download/pr/ae1014c7-a005-4a0e-9062-b6f3056ded09/da5d731f5ead9e385427a77412b88fb0/dotnet-hosting-6.0.5-win.exe), but the installer should automatically download and install this. Under linux, you must first have [docker](https://www.docker.com/) installed. Then, use the [horizon-reports-docker](gchr.io) image to create a new container. 
 
 > <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> If you're deploying to Azure or similar and are unable to run the installer, instead install to a local folder and then upload the contents of that folder to the server.
 
@@ -20,6 +20,7 @@ Regardless of whether the web site is on the current or a remote system, the fol
 
 * Enable read and write access to the App_Data, Licenses, and Logs folders.
 
+> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> For docker based deployments, the Licenses and Logs folders will be located under the App_Data shared volume. 
 
 ### Publishing to Microsoft Azure
 The simplest way to publish to a Microsoft Azure server is to publish to a local folder first, then copy the files from the local folder to the Azure server. Follow these steps:
@@ -40,4 +41,7 @@ The simplest way to publish to a Microsoft Azure server is to publish to a local
 
 ### Publishing to a Microsoft Azure web site
 Publishing to a Microsoft Azure web site is straightforward. Follow the steps in the previous section to create a publish folder on a local drive, then upload the contents of that folder to the site using FTP.
+
+### Publishing to a docker container
+Follow the steps in the previous section to create a publish folder (Project_Data) on a local drive. Once it's ready, upload the contents of that folder to docker host machine using FTP/SFTP/SCP. When [docker container]({% link _docs/deploying/docker.md %}), make sure to map a shared volume to the publish folder you copied. 
 

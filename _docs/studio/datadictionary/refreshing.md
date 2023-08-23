@@ -14,6 +14,8 @@ When the structure of a database changes, such as when a new table or field is a
 
 * *Create subtables for self joined tables*: Turn this option on to automatically create a subtable any time any self-joined table or more than one relationship between the same set of tables is discovered. You can rename the subtable if you wish. See the [Creating a Subtable]({% link _docs/studio/datadictionary/table-properties.md %}) topic for information on subtables.
 
+* *Ignore schema when matching tables*: Turn this on to ignore the schema value when matching objects. Normally, an object in a project is uniquely identified by the database and schema it belongs to. During a refresh, discovered objects are compared to existing objects by matching the database and schema names, as well as the object name. This is useful if you want to refresh against a database type that doesn't support schemas, but use an existing project with schema names to do so.
+
 * *Version*: the version number to assign to new tables and fields.
 
 * *Refresh All Tables*: Turn this option off if you want to choose which tables to refresh. 

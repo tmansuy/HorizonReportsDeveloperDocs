@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Stonefield Query 5.0
-nav_order: 4
+nav_order: 5
 parent: Previous Releases
 grand_parent: Home
 ---

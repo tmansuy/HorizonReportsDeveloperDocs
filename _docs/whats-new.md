@@ -7,52 +7,62 @@ parent: Home
 
 # Version 1.1
 
-* You can now customize the name of the [cookie]({% link _docs/how-to/configuring.md %}) that Horizon Reports sends to the browser.
+* Horizon Reports will now run in a Linux environment. A [docker image]({% link _docs/deploying/docker.md %}) is available for this purpose.
 
-* When [refreshing the data dictionary]({% link _docs/studio/datadictionary/refreshing.md %}), you can now choose specific tables to refresh from a list. 
+* A new [project setting]({% link _docs/studio/configuration/configuration-settings.md %}), Disable Slide Toggles, allows you to disable the "slide" style toggle switches and show standard checkboxes instead.
 
-* The [database tree view]({% link _docs/studio/datadictionary/database-properties.md %}) will now scroll to the previously selected item after a change.
+* You can now show captions beside object names in the [database treeview]({% link _docs/studio/datadictionary/index.md %}) in Studio.
 
-* If you launch Horizon Reports with no [project]({% link _docs/studio/creating-a-project.md %}) created, you are now automatically prompted to create a new project.
+* A new option in Studio allows you to [hide non-reportable tables and fields from view]({% link _docs/studio/datadictionary/index.md %}).
 
-* You can now highlight items in the [database tree view]({% link _docs/studio/datadictionary/database-properties.md %}) by last updated date or keyword search.
+* The same [connection string builder]({% link _docs/studio/datadictionary/connection-string-builder.md %}) in Studio is now available when creating a new project.
 
-* Added [Format]({% link _docs/studio/datadictionary/field-properties.md %}) presets for different data types.
+* A new Ignore Schema option when [refreshing]({% link _docs/studio/datadictionary/refreshing.md %}) allows you to ignore the schema value when matching objects. This is useful if you want to refresh against a database type that doesn't support schemas, but use an existing project with schema names to do so.
 
-* In Studio, you can now right-click on a table and choose [View Table Contents]({% link _docs/studio/datadictionary/view-table-contents.md %}) to retrieve and view the table.
+* Administrators can now log in even if there's a problem with the license file.
 
-* Added a [connection string builder]({% link _docs/studio/datadictionary/connection-string-builder.md %}) to Studio to help creating database connection strings.
+* You can now navigate directly to Setup from Studio.
 
-* You can now test [relations]({% link _docs/studio/datadictionary/relation-properties.md %}) with a new Test button.
+* More relevant error information is displayed in the browser when a connection test fails.
 
-* The [BeforeExportReport]({% link _docs/plugins/reportengine/beforeexportreport.md %}) plugin method now supports changes to the export options for the report. 
+* Loading/busy indicators are now shown when testing joins and connections.
 
-* Moved the default location for [hrsettings.json]({% link _docs/how-to/configuring.md %}) file to Project_Data. This allows setting the file permissions for the application root folder to read-only. Previous installations that have hrsettings.json in the application root will still continue to work normally. 
+* A new reload button is available in the license manager. You can use this to force the [licenses]({% link _docs/how-to/activating.md %}) to be reloaded if you made changes to the license file on disk.
 
-* Added support for string concat (\|\|) operator when reporting against a data source that requires it (like SQLite).
+* The data source name is now used as the database name when creating a project based on a SQLite database.
 
-* Added new URL for [directly exporting a report]({% link _docs/how-to/usingfromotherwebapps.md %}) to file. 
+* You can now create new database fields (rather than Calculated fields) in Studio. In addition, you can now change the name and data type for existing [database fields]({% link _docs/studio/datadictionary/field-properties.md %}).
+
+* Studio will now automatically reload if you [delete the project]({% link _docs/studio/managing-projects.md %}) that's currently open.
+
+* Added confirmation prompt when deleting a project.
+
+* You can now use Studio without having a [developer license]({% link _docs/licensing.md %}) installed.
+
+* A Project_Data folder is now created automatically if it doesn't exist when running for the first time.
+
+* Data protection keys are now persisted and reused when the application restarts.
 
 ## Bug Fixes
 
-* Fixed a bug where the Studio app wouldn't work properly when hosted from a virtual directory.
+* Fixed a bug with custom user resources not being loaded from the project file.
 
-* Fixed a bug with custom favicon and logo handling. 
+* Fixed a bug with related/involved fields not being saved properly for calculated fields.
 
-* Fixed an issue using a MySql backend to host the data dictionary database. 
+* Fixed a bug with built-in functions not getting loaded if a Functions folder didn't exist. 
 
-* Fixed an issue with views not being handled properly during a refresh.
+* Fixed an issue with unlimited viewer licenses not being handled properly.
 
-* Last changed time for meta data objects is now updated properly on changes.
+* Fixed a bug where the list of available tables shown during a refresh was sometimes empty.
 
-* Deleting a table from the data dictionary now automatically removes any related joins.
+* Fixed an issue where the table preview wasn't being updated to reflect the most recent changes.
 
-* Fixed a bug where the field order wasn't being set properly for new fields.
+* Fixed a bug with involved fields sometimes not being added to the SQL query if a complex join was used in the report.
 
-* Fixed a bug with automatic plugin compilation using the wrong .NET assemblies.
+* Added delay to search in Studio to improve performance in large projects.
 
-* Fixed several issues that occurred when importing legacy projects. 
+* Fixed a bug when creating a subtable that had a field with the same name as the original table.
 
-* Fixed a bug with imported projects not having the correct project ID.
+* Fixed a bug with SQL Passthrough reports not working initially after creation.
 
-* Fixed an issue where an expired license caused the application to stop working.
+* Fixed a bug with getting logged out automatically after creating a new project.
