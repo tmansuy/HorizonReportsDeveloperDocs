@@ -5,7 +5,7 @@ nav_order: 2
 parent: Home
 ---
 
-# Version 1.1
+# Version 1.2
 
 * Horizon Reports will now run in a Linux environment. A [docker image]({% link _docs/deploying/docker.md %}) is available for this purpose.
 
