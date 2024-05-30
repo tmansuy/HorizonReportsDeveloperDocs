@@ -1,7 +1,15 @@
 ---
 layout: default
 title: Stonefield Query 5.0
+<<<<<<< Updated upstream
 nav_order: 5
+=======
+<<<<<<< Updated upstream
+nav_order: 4
+=======
+nav_order: 6
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 parent: Previous Releases
 grand_parent: Home
 ---

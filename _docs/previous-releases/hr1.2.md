@@ -1,16 +1,12 @@
 ---
 layout: default
-title: What's New in this Release
-nav_order: 2
-parent: Home
+title: Horizon Reports 1.2
+nav_order: 1
+parent: Previous Releases
+grand_parent: Home
 ---
 
-<<<<<<< Updated upstream
 # Version 1.2
-=======
-<<<<<<< Updated upstream
-# Version 1.1
->>>>>>> Stashed changes
 
 * Horizon Reports will now run in a Linux environment. A [docker image]({% link _docs/deploying/docker.md %}) is available for this purpose.
 
@@ -70,13 +66,4 @@ parent: Home
 
 * Fixed a bug with SQL Passthrough reports not working initially after creation.
 
-<<<<<<< Updated upstream
 * Fixed a bug with getting logged out automatically after creating a new project.
-=======
-* Fixed an issue where an expired license caused the application to stop working.
-=======
-# Version 1.3
-
-## Bug Fixes
->>>>>>> Stashed changes
->>>>>>> Stashed changes

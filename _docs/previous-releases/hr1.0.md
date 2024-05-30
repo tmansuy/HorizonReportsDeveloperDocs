@@ -1,7 +1,15 @@
 ---
 layout: default
 title: Horizon Reports 1.0
+<<<<<<< Updated upstream
 nav_order: 2
+=======
+<<<<<<< Updated upstream
+nav_order: 1
+=======
+nav_order: 3
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 parent: Previous Releases
 grand_parent: Home
 ---
