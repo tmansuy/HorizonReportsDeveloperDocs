@@ -11,33 +11,33 @@ parent: Home
 
 * Horizon Reports now uses .NET 8
 
-* Updating the connection string for a database in Studio no longer requires a restart to take effect. 
+* Updating the connection string for a [database]({% link _docs/studio/datadictionary/database-properties.md %}) in Studio no longer requires a restart to take effect. 
 
 * Swapped MySql.Data.MySqlClient provider with MySqlConnector since it works better with MariaDB
 
-* Defined foreign keys in the database schema for a MySql database will now appear as corresponding relations for the table in Studio.
+* Defined foreign keys in the database schema for a MySql database will now appear as corresponding [relations]({% link _docs/studio/datadictionary/relation-properties.md %}) for the table in Studio.
 
-* You can now use external authentication (Open ID Connect) with a tenant based project. 
+* You can now use [external authentication]({% link _docs/how-to/externalidentproviders.md %}) (Open ID Connect) with a tenant based project. 
 
 * Externally authenticated users can now use 2-factor authentication.
 
-* Data sources in the connection string manager are now tested and saved one at a time, rather than all at once. 
+* Data sources in the [connection string manager]({% link _docs/studio/datadictionary/database-properties.md %}) are now tested and saved one at a time, rather than all at once. 
 
 * You can now save a connection string, even if a test connection fails. 
 
-* The connection string builder is now available from a few new places.
+* The [connection string builder]({% link _docs/studio/datadictionary/connection-string-builder.md %}) is now available from a few new places.
 
 * The report writer navigation button in Studio no longer requires a restart.
 
-* If a project has more than one database, the source database name is displayed in the table caption when creating a join.
+* If a project has more than one database, the source database name is displayed in the table caption when [creating a relation]({% link _docs/studio/datadictionary/relation-properties.md %}).
 
-* If you change any authentication settings for a project, you now get a warning that a restart is required for the changes to take effect.
+* If you change any [authentication settings]({% link _docs/studio/datadictionary/configuration/configuration-settings.md %}) for a project, you now get a warning that a restart is required for the changes to take effect.
 
-* If the authentication settings for a project are causing a startup failure or a login problem, you can use the new command line parameter clearauthsettings=true. This allows you to start up the project locally while ignoring the authenticaiton settings to resolve the issue.
+* If the [authentication settings]({% link _docs/studio/datadictionary/configuration/configuration-settings.md %})for a project are causing a startup failure or a login problem, you can use the new command line parameter clearauthsettings=true. This allows you to start up the project locally while ignoring the authenticaiton settings to resolve the issue.
 
-* Sql Server and MySql project connection types also have a default connection string similar to SQLite.
+* Sql Server and MySql [project]({% link _docs/studio/creating-a-project.md %}) connection types also have a default connection string similar to SQLite.
 
-* The Source Database field should now only appear if tenant support is off. You can also disable the field manually with a new setting.
+* The Source Database field should now only appear if tenant support is off. You can also disable the field manually with a [new setting]({% link _docs/studio/datadictionary/configuration/configuration-settings.md %}).
 
 * The installation folder now takes up less space and contains fewer files.
 
