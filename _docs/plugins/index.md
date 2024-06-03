@@ -37,7 +37,7 @@ There are several different types of plugins in Horizon Reports:
 
 * [Web action]({% link _docs/plugins/webaction/index.md %}): these plugins support custom actions. The plugin's PerformAction method is called when its corresponding URL is navigated to, and the method is responsible for returning an appropriate HTTP response.
 
-Horizon Reports supports any .NET language for a plugin, and targets .NET 6.  When creating a new plugin project, you should create a class library that targets net6.0.
+Horizon Reports supports any .NET language for a plugin, and targets .NET 8.  When creating a new plugin project, you should create a class library that targets net8.0.
 
 A plugin is identified by Horizon Reports by the following:
 

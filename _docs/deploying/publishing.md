@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Publishing Horizon Reports
-nav_order: 4
+nav_order: 2
 parent: Deploying Horizon Reports
 ---
 
 # Publishing a Project
 To deploy Horizon Reports on a web server, you need to deploy two things:
 
-- Horizon Reports web application: On the web server, download the [web application installer](https://www.horizon-reports.com/downloads/current/hrwebsetup.exe) and install. The application requires the [ASP.NET Core 6.0 Hosting Bundle](https://download.visualstudio.microsoft.com/download/pr/ae1014c7-a005-4a0e-9062-b6f3056ded09/da5d731f5ead9e385427a77412b88fb0/dotnet-hosting-6.0.5-win.exe), but the installer should automatically download and install this. Under linux, you must first have [docker](https://www.docker.com/) installed. Then, use the [horizon-reports-docker](gchr.io) image to create a new container. 
+- Horizon Reports web application: On the web server, download the [web application installer](https://www.horizon-reports.com/downloads/current/hrwebsetup.exe) and install. The application requires the [ASP.NET Core 8.0 Hosting Bundle](https://download.visualstudio.microsoft.com/download/pr/00397fee-1bd9-44ef-899b-4504b26e6e96/ab9c73409659f3238d33faee304a8b7c/dotnet-hosting-8.0.4-win.exe), but the installer should automatically download and install this. Under linux, you must first have [docker](https://www.docker.com/) installed. Then, use the [horizon-reports-docker](gchr.io) image to create a new container. 
 
 > <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> If you're deploying to Azure or similar and are unable to run the installer, instead install to a local folder and then upload the contents of that folder to the server.
 

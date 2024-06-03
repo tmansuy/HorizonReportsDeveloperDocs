@@ -15,4 +15,6 @@ Horizon Reports is licensed on a per-user basis. That means each user who wants 
 
 * When you log in, Horizon Reports checks how many users are currently using a license. If all licenses are currently in use (for example, five users are currently logged in and there are five licenses in total), you are informed of this and returned to the Login page. So, Horizon Reports licensing is sometime called "concurrent use" because only as many users as there are licenses can be logged in at the same time.
 
+* If using tenant support in a project, you can limit the total number of licenses a tenant can be using concurrently.
+
 The Setup function in the Tools menu, which is only available for users in the Administrator role, can be used to [manage licenses]({% link _docs/how-to/activating.md %}).

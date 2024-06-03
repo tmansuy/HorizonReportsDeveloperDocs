@@ -65,6 +65,18 @@ You can configure the following options in an **hrsettings.json** file. The defa
     "ConnectionType": "SQLite"
 }
 ```
+- *AppDataConnectionString*: A connection string for a database that stores the application data (reports, users, tags, etc...). 
+```json
+{
+    "AppDataConnectionString": "Data Source=App_Data/hrdata.db"
+}
+```
+- *AppDataConnectionType*: The type of database that stores the application data. SQLite, SqlServer, and MySql are supported options.
+```json
+{
+    "ConnectionType": "SQLite"
+}
+```
 - *CurrentProject*: The database ID of the project to load in the report writer. Normally you would change this value in the Horizon Reports Studio interface. 
 ```json
 {

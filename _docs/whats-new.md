@@ -15,9 +15,9 @@ parent: Home
 
 * Swapped MySql.Data.MySqlClient provider with MySqlConnector since it works better with MariaDB
 
-* Defined foreign keys in the database schema for a MySql database are now supported for relationship creation during a refresh.
+* Defined foreign keys in the database schema for a MySql database will now appear as corresponding relations for the table in Studio.
 
-* You can now use external authentication (Open ID Connect) with a tenant based project. A Tenant claim (for an existing tenant) must be attached to the ID Token the auth server returns during authentication or the request will be denied.  
+* You can now use external authentication (Open ID Connect) with a tenant based project. 
 
 * Externally authenticated users can now use 2-factor authentication.
 
@@ -25,13 +25,15 @@ parent: Home
 
 * You can now save a connection string, even if a test connection fails. 
 
+* The connection string builder is now available from a few new places.
+
 * The report writer navigation button in Studio no longer requires a restart.
 
 * If a project has more than one database, the source database name is displayed in the table caption when creating a join.
 
 * If you change any authentication settings for a project, you now get a warning that a restart is required for the changes to take effect.
 
-* If the authentication settings for a project are causing a startup failure or a login problem, you can use the new command line parameter clearauthsettings=true. This allows you to start up the project from Kestrel while ignoring the authenticaiton settings to resolve the issue.
+* If the authentication settings for a project are causing a startup failure or a login problem, you can use the new command line parameter clearauthsettings=true. This allows you to start up the project locally while ignoring the authenticaiton settings to resolve the issue.
 
 * Sql Server and MySql project connection types also have a default connection string similar to SQLite.
 

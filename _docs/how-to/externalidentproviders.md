@@ -7,6 +7,10 @@ parent: How To
 
 Horizon Reports supports using an external identity provider for single sign-on (SSO) (e.g. Active Directory Federation Services or OpenID Connect). In addition, you can also enable support for third party identity providers via Google, Facebook, or Twitter social media accounts. Each of these authentication options can be configured by entering the appropriate information in the Configuration Settings section of the project.
 
+
+> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> After changing any of these settings, you'll need to restart the application before they take effect. If you find that you're unable to login after a setting change, launch Horizon Reports locally with HRWeb.exe and pass clearauthsettings=true as a command line argument.
+
+
 # Active Directory Federation Services
 
 To enable external authentication using Active Directory Federation Services, you need to specify the *ADFS Metadata address* and the *ADFS Realm*.
@@ -24,6 +28,10 @@ To enable external authentication using OpenID Connect, you need to specify the 
 * *OpenID ClientID*: The ClientID value to send to the OpenID Connect authentication server.
 
 * *OpenID ClientSecret*: The secret key value to send to the OpenID Connect authentication server.
+
+## Tenant Support With OIDC
+
+If you have tenants enabled for a project, you can still use external authentication. In this case, during the connection/authorization process, the Identity Provider must tell Horizon Reports what tenant the current user belongs to. To do this, attach a tenant claim (for an existing tenant) to the ID Token the IdP server returns during authentication. If there's no tenant attached, or the tenant that's attached doesn't exist, the login attempt will be rejected.
 
 # Facebook
 

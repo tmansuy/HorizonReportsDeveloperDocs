@@ -11,4 +11,4 @@ During application startup, Horizon Reports enumerates the source files (e.g. Pr
 
 ### Dependencies
 
-During compliation, references to most assemblies that are part of .NET 6 are available. However, if your code depends on additional assemblies (for example, from a nuget package), then copy the assembly file (.dll) to the source folder as well.
+During compliation, references to most assemblies that are part of .NET 8 are available. However, if your code depends on additional assemblies (for example, from a nuget package), then copy the assembly file (.dll) to the source folder as well.

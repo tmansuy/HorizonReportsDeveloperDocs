@@ -72,6 +72,8 @@ Note that the email credentials used to send the email come from the "Demo Email
 
 * *Default Data Group for New Reports*: This property specifies which [data group]({% link _docs/studio/datadictionary/table-properties.md %}) is initially selected in Step 1 of the report wizards when the user creates a new report. To change this setting, select the desired data group from the drop-down list.
 
+* *Display 'Source Database' field*: If you set this to false, the 'Source Database' field that normally appears in each table when there's more than one datasource will instead be hidden."),
+
 * *Include Joins in the Where Clause*: Some database engines, such as Microsoft Access or older versions of Oracle, do not work properly with joins between tables specified in a JOIN clause of a SQL statement. Instead, they expect joins to be specified in the WHERE clause. For example, instead of using the following SQL statement for a query joining four tables:
 
     select Products.ProductName,Customers.CompanyName
