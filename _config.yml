@@ -25,7 +25,6 @@ company: TNM Software
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation for Horizon Reports ad hoc reporting software.
 url: "https://developerdocs.horizon-reports.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  tmansuy
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
