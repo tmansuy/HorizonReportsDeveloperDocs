@@ -31,13 +31,13 @@ parent: Home
 
 * If a project has more than one database, the source database name is displayed in the table caption when [creating a relation]({% link _docs/studio/datadictionary/relation-properties.md %}).
 
-* If you change any [authentication settings]({% link _docs/studio/datadictionary/configuration/configuration-settings.md %}) for a project, you now get a warning that a restart is required for the changes to take effect.
+* If you change any [authentication settings]({% link _docs/studio/configuration/configuration-settings.md %}) for a project, you now get a warning that a restart is required for the changes to take effect.
 
-* If the [authentication settings]({% link _docs/studio/datadictionary/configuration/configuration-settings.md %})for a project are causing a startup failure or a login problem, you can use the new command line parameter clearauthsettings=true. This allows you to start up the project locally while ignoring the authenticaiton settings to resolve the issue.
+* If the [authentication settings]({% link _docs/studio/configuration/configuration-settings.md %})for a project are causing a startup failure or a login problem, you can use the new command line parameter clearauthsettings=true. This allows you to start up the project locally while ignoring the authenticaiton settings to resolve the issue.
 
 * Sql Server and MySql [project]({% link _docs/studio/creating-a-project.md %}) connection types also have a default connection string similar to SQLite.
 
-* The Source Database field should now only appear if tenant support is off. You can also disable the field manually with a [new setting]({% link _docs/studio/datadictionary/configuration/configuration-settings.md %}).
+* The Source Database field should now only appear if tenant support is off. You can also disable the field manually with a [new setting]({% link _docs/studio/configuration/configuration-settings.md %}).
 
 * The installation folder now takes up less space and contains fewer files.
 
