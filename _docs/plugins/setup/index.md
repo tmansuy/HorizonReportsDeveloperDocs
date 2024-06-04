@@ -80,7 +80,8 @@ namespace HorizonReports.Plugins
         /// </summary>
         /// <param name="settings">
         /// A list of the settings to save. See GetSettings for a
-        /// description.
+        /// description. Note that delete actions also call this method,
+		/// but with a DELETED key value.
         /// </param>
         /// <returns>
         /// True if it succeeded.
