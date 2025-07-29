@@ -16,14 +16,10 @@ Two SQL Server databases are needed for *Clustered* mode.
 ### Cache
 A SQL Server database to use for caching is required for proper operation in a clustered environment. If you haven't already created a caching database, use the **dotnet sql-cache create** command. For example:
 ```
-dotnet sql-cache create "Data Source=dbserver;Initial Catalog=SQDistCache;uid=sa;pwd=sapassword" dbo SQWebCache
+dotnet sql-cache create "Data Source=dbserver;Initial Catalog=HRDistCache;uid=sa;pwd=sapassword" dbo HRWebCache
 ```
 
 Once the caching database has been created, configure *CacheConnectionString* in [options.json]({% link _docs/how-to/configuring.md %}).
-
-### Scheduler
-
-A SQL Server database is required for the scheduler. If you haven't already done so, create a SQL Server server database for the scheduler, then configure *SchedulerConnectionString* in [options.json]({% link _docs/how-to/configuring.md %}).
 
 # ARR and IIS
 
