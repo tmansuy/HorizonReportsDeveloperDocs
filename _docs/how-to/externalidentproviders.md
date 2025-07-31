@@ -29,9 +29,13 @@ To enable external authentication using OpenID Connect, you need to specify the 
 
 * *OpenID ClientSecret*: The secret key value to send to the OpenID Connect authentication server.
 
+## Automatically assign roles on user creation
+
+The first time a user logs in with external authentication, a local Horizon Reports user account is created. During this process, you can have the Identity Provider instruct Horizon Reports to assign roles when the user is created. To do this, attach a comma-separated list of role names (for existing roles) to the ID Token the IdP server returns during authentication.
+
 ## Tenant Support With OIDC
 
-If you have tenants enabled for a project, you can still use external authentication. In this case, during the connection/authorization process, the Identity Provider must tell Horizon Reports what tenant the current user belongs to. To do this, attach a tenant claim (for an existing tenant) to the ID Token the IdP server returns during authentication. If there's no tenant attached, or the tenant that's attached doesn't exist, the login attempt will be rejected.
+If you have tenants enabled for a project, you can still use external authentication. In this case, during the connection/authorization process, the Identity Provider must tell Horizon Reports what tenant the current user belongs to. To do this, attach a tenant claim (for an existing tenant) to the ID Token the IdP server returns during authentication. If you have an existing external authentication system that already uses a claim named *tenant*, you can use *reporting_tenant* instead. If there's no tenant attached, or the tenant that's attached doesn't exist, the login attempt will be rejected.
 
 # Facebook
 

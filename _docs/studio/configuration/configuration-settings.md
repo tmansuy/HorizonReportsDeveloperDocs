@@ -111,21 +111,25 @@ In certain types of applications, such as an accounting system, you may want the
 
 * *Skip Schema Retrieval when Running a Report*: If you set this option to true, the report writer will skip retrieving the schema for a query prior to actually executing the query. This can slightly improve performance, but database queries issued this way cannot be cancelled.
 
-## Web Settings
+## Email settings
 
-* *Users Can Register on Login Page*: If this is set to True, unauthorized users can click a link on the login page to be given access to the application. This is typically only turned on in demo web sites. Note that the link only appears if the various Demo Email settings are filled in.
+* *Default Email Sender Address*: This is the email address to send default messages (Password Resets, New User Registration, Scheduled emails, etc...) from.
 
-* *Server Email Sender Address*: This is the email address to send server messages (Password Resets, New User Registration, etc...) from.
+* *Default Email Sender Name*: This is the descriptive name of the sender default messages are from.
 
-* *Server Email Sender Name*: This is the descriptive name of the sender server messages are from.
-
-* *Server Email SMTP Server*: This is the address of the SMTP server to send the messages from.
+* *Default Email SMTP Server*: This is the address of the SMTP server to send the messages from.
 
 * *Server Email SMTP Port*: This is the port to use for the SMTP server when sending messages.
 
-* *Server Email SMTP User Name*: This is the user name of the mail account to send server messages from.
+* *Server Email SMTP User Name*: This is the user name of the mail account to send messages from.
 
-* *Server Email SMTP Password*: This is the password of the mail account to send server messages from.
+* *Server Email SMTP Password*: This is the password of the mail account to send messages from.
+
+The email settings defined here will be used to send scheduled emails if a user doesn't have custom settings defined.
+
+## Web Settings
+
+* *Users Can Register on Login Page*: If this is set to True, unauthorized users can click a link on the login page to be given access to the application. This is typically only turned on in demo web sites. Note that the link only appears if the various Demo Email settings are filled in.
 
 * *Support Multi-Tenant Environment*: Set this setting to True to enable [multi-tenant support]({% link _docs/studio/multi-tenant.md %}).
 
@@ -134,6 +138,8 @@ In certain types of applications, such as an accounting system, you may want the
 * *Data Type of Tenant Filter Field*: This specifies the data type of the field specified in the *Filter field for queries in multi-tenant* setting.
 
 * *Disable Slide Toggles*: Set this to true to hide the slide toggle style checkboxes and display standard checkboxes instead.
+
+* *Login Failure Limit*: The number of login failures a user is allowed in a 5 minute period before they are banned (for 5 minutes).
 
 ## Auth Settings
 

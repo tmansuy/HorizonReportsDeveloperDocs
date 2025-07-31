@@ -13,3 +13,5 @@ You can use Studio to retrieve the data for a table. To do so, right click on th
 After the contents of the table are retrieved from the database, they appear in a dialog. 
 
 ![](/assets/images/tablecontents.png)
+
+If any of the columns defined for the table cause an error when executing the query, the retrieval will be tried again without the columns with errors. Any columns that initially generated an error will have their contents filled with "Error".

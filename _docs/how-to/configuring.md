@@ -76,3 +76,9 @@ You can configure the following options in an **hrsettings.json** file. The defa
     "CurrentProject": 1
 }
 ```
+- *SchedulerEnabled*: Set this to True (the default) to allow the scheduler to execute scheduled tasks. Normally you would change this value in the Horizon Reports Studio interface, but if you want the application to start with the scheduler disabled, you can change it here.
+```json
+{
+    "CurrentProject": true
+}
+```

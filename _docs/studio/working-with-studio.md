@@ -21,4 +21,6 @@ The Project menu has functions for [creating a new project]({% link _docs/studio
 
 * *[Configuration]({% link _docs/studio/configuration/configuration-settings.md %})*: Here you can modify customization settings for the reporting project.
 
+Clicking the *Scheduler On* button will disable the report scheduler until it's turned on again by clicking the same button.
+
 
