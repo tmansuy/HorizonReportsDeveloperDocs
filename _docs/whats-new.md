@@ -7,7 +7,7 @@ parent: Home
 
 # Version 1.4
 
-* The primary navigation control in [Studio]({% link _docs/studio/working-with-studio.md %}) for interacting with the data dictionary has been replaced. The previous control had issues with performance and scrolling that were difficult to fix due to how it worked. The new control has much better performance, and always maintains the correct scroll position even after updating to accomodate new items. The new control also supports navigating with the arrow keys and spacebar on a keyboard, similar to the desktop version of Studio. 
+* The primary navigation control in [Studio]({% link _docs/studio/working-with-studio.md %}) for interacting with the data dictionary has been replaced. The previous control had issues with performance and scrolling that were difficult to fix due to how it worked. The new control has much better performance, and always maintains the correct scroll position even after updating to accommodate new items. The new control also supports navigating with the arrow keys and spacebar on a keyboard, similar to the desktop version of Studio. 
 
 * The context menu for [previewing tables]({% link _docs/studio/datadictionary/view-table-contents.md %}) in the previous control has been replaced with a preview button. 
 

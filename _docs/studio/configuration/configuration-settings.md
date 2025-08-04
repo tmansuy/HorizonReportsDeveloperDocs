@@ -119,11 +119,11 @@ In certain types of applications, such as an accounting system, you may want the
 
 * *Default Email SMTP Server*: This is the address of the SMTP server to send the messages from.
 
-* *Server Email SMTP Port*: This is the port to use for the SMTP server when sending messages.
+* *Default Email SMTP Port*: This is the port to use for the SMTP server when sending messages.
 
-* *Server Email SMTP User Name*: This is the user name of the mail account to send messages from.
+* *Default Email SMTP User Name*: This is the user name of the mail account to send messages from.
 
-* *Server Email SMTP Password*: This is the password of the mail account to send messages from.
+* *Default Email SMTP Password*: This is the password of the mail account to send messages from.
 
 The email settings defined here will be used to send scheduled emails if a user doesn't have custom settings defined.
 
