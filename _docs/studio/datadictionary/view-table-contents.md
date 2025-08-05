@@ -6,7 +6,7 @@ parent: Data Dictionary
 grand_parent: Horizon Reports Studio
 ---
 
-You can use Studio to retrieve the data for a table. To do so, right click on the desired table in the database tree view, and choose *View Table Contents*. 
+You can use Studio to retrieve the data for a table. To do so, use the action icon in the right hand column of the database list that appears for table entries.
 
 ![](/assets/images/viewtablemenu.png)
 
